@@ -1,0 +1,31 @@
+# Options block
+begin options
+  packagename 'GHB Lakes' (16 character limit)
+  PRINT_INPUT (echo input to listing file)
+  PRINT_FLOWS  (print the flows to the listing file)
+  BOUNDNAMES
+end options
+
+# Dimensions block
+begin dimensions
+#  maxbound 3 
+end dimensions
+
+# Stress-period block(s)
+begin period 1
+  1  3  1  100.0  1500.
+  1  7  1  110.0  1400.  ghb2_upper
+  1  7  1   85.0   500.  ghb2_lower
+end period
+
+begin period 2
+  1  3  1  100.0  1502.
+  1  7  1  110.0  1402.  ghb2_upper
+  1  7  1   85.0   502.  ghb2_lower
+end period
+
+begin period 3
+  1  3  1  100.0  1503.
+  1  7  1  110.0  1403.  ghb2_upper
+  1  7  1   85.0   503.  ghb2_lower
+end period

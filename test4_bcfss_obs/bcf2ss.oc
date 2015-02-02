@@ -1,0 +1,21 @@
+HEAD SAVE file bcf2ss.hds
+BUDGET SAVE FILE bcf2ss.cbc
+head print format 4
+head save format (15f7.2) label
+ibound save format (15i2) label
+ibound save file ibound.out
+
+PERIOD 1 STEP 1
+  PRINT BUDGET
+  PRINT HEAD
+  SAVE BUDGET
+  SAVE HEAD
+  save ibound
+
+PERIOD 2 STEP 1
+  PRINT BUDGET
+  PRINT HEAD
+  SAVE BUDGET
+  SAVE HEAD
+  save ibound
+  

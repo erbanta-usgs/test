@@ -1,0 +1,48 @@
+#option block.  Note -- no comments allowed on aux line
+begin options
+  AUX var1 var2 var3
+  PACKAGENAME 'wells near river' (16 character limit)
+  PRINT_INPUT (echo input to listing file)
+  PRINT_FLOWS  (print the flows to the listing file)
+  SAVE_FLOWS  test4ts.cbc (file for binary flow information; must be opened using DATA(BINARY))
+  BOUNDNAMES
+  TimeSeriesFile  well-1_rate.ts
+  TimeSeriesFile  well-2_rate.ts
+end options
+
+begin dimensions
+#  MAXBOUND 5
+end dimensions
+
+begin period 2
+#        k         i         j      flow      var1    var2 var3
+         2         3         4   well_1_rate    1       2    3   well_1
+         2         8         4   well_2_rate    4       5    6   well_2
+         2         4         6     -10.0        7       8    9
+         2         5         8     -20.0       17      18   19
+         2         2         9     -40.0       27      28   29
+end period
+
+begin period 3
+#        k         i         j      flow      var1    var2 var3
+         1         2         3     -50.0       -1      -2   -3
+         2         3         4   well_1_rate    1       2    3   well_1
+         2         8         4   well_2_rate    4       5    6   well_2
+end period
+
+begin period 4
+#        k         i         j      flow      var1    var2 var3
+         2         8         4   well_2_rate    1       2    3   well_2
+         2         3         4   well_1_rate    4       5    6   well_1
+end period
+
+begin period 6
+end period
+
+
+------should not be read because period 6 (nper) input is specified.----
+begin period 5
+#        k         i         j      flow      var1    var2 var3
+         2         8         4   -40000.0       4       5    6   well_2
+         2         3         4   well_1_rate    1       2    3   well_1
+end period

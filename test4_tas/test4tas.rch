@@ -1,0 +1,29 @@
+BEGIN OPTIONS
+  HIGHEST_ACTIVE
+  PRINT_INPUT
+  PRINT_FLOWS
+  SAVE_FLOWS
+  PACKAGENAME RECHARGE
+  TIMEARRAYSERIESFILE RchArraySeries.tas
+  AUX var1
+END OPTIONS
+
+# Dimension block is required
+BEGIN DIMENSIONS
+  MAXBOUND 150
+END DIMENSIONS
+
+# Time-array series applies stress periods 1-7
+BEGIN PERIOD 1
+  NLARRAY
+    CONSTANT 1
+  RECHARGE  TIMEARRAYSERIES  RchArraySeries
+  var1
+    constant 100.
+END PERIOD
+
+# Constant recharge applies stress period 8
+BEGIN PERIOD 8
+  RECHARGE
+    CONSTANT 0.001
+END PERIOD

@@ -1,0 +1,290 @@
+
+ READING SIMULATION OPTIONS
+ END OF SIMULATION OPTIONS
+
+ READING SIMULATION TIMING
+
+ TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
+ VERSION 1 : 11/13/2014 - INPUT READ FROM UNIT 1002
+ PROCESSING TDIS OPTIONS
+    MODEL TIME UNIT IS DAYS
+ END OF TDIS OPTIONS
+ PROCESSING TDIS DIMENSIONS
+    2 STRESS PERIOD(S) IN SIMULATION
+ END OF TDIS DIMENSIONS
+ PROCESSING TDIS STRESS_PERIODS
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT
+ ----------------------------------------------------------------------------
+        1        1.0000000          1                    1.000
+        2        1.0000000          1                    1.000
+ END OF TDIS STRESS_PERIODS
+ END OF SIMULATION TIMING
+
+ READING SIMULATION MODELS
+ #modeltype      namefile         modelname
+
+ Creating model: GWF_1               
+ Using name file: bcf2ss_struct.nam
+ On unit number:   1003
+ END OF SIMULATION MODELS
+
+ READING SIMULATION EXCHANGES
+ END OF SIMULATION EXCHANGES
+
+ READING SOLUTION_GROUP
+
+ Creating solution: SLN_1               
+ Using solution input file: model.sms
+ On unit number:   1026
+ END OF SIMULATION SOLUTION_GROUP
+
+ SMS -- SPARSE MATRIX SOLVER PACKAGE, VERSION 8, 5/2/2005
+         INPUT READ FROM UNIT***
+
+ PROCESSING SMS OPTIONS
+ SPECIFIED OPTION:
+ SOLVER INPUT VALUES WILL BE USER-SPECIFIED
+ END OF SMS OPTIONS
+
+ PROCESSING SMS NONLINEAR
+ END OF SMS NONLINEAR DATA
+ OUTER ITERATION CONVERGENCE CRITERION (HCLOSE) =    0.100000E-03
+ MAXIMUM NUMBER OF OUTER ITERATIONS (MXITER)     =       500
+ SOLVER PRINTOUT INDEX             (IPRSMS)      =         1
+ NONLINEAR ITERATION METHOD    (NONLINMETH)      =         0
+ LINEAR SOLUTION METHOD           (LINMETH)      =         2
+ ***PICARD LINEARIZATION WILL BE USED***
+ 
+ ***PCGU LINEAR SOLVER WILL BE USED***
+
+ PCGU -- UNSTRUCTURED CONJUGATE-GRADIENT SOLUTION PACKAGE, VERSION 8.02, 08/13/2013
+
+ PROCESSING PCGU DATA
+ END OF PCGU
+
+              SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF    500 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF    100 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = CG        
+ MATRIX PRECONDITIONING TYPE           = MOD. INCOMPLETE LU  
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-03
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E-02
+ RESIDUAL CONVERGENCE OPTION           =        0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.97000E+00
+  ONLY USED WITH MILU0 PRECONDITIONER
+
+
+ 
+1
+                            STRESS PERIOD NO.    1, LENGTH =  1.0000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  1.0000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               18                224.78                   142           GWF-node number
+        2               22               -123.98                    23           GWF-node number
+        3               17                4.8985                   129           GWF-node number
+        4               16               -2.5648                    94           GWF-node number
+        5               16               -2.6023                   124           GWF-node number
+        6               15               0.91288                   138           GWF-node number
+        7               13               0.84177E-01               138           GWF-node number
+        8               10              -0.71759E-02               137           GWF-node number
+        9                9               0.44686E-03               136           GWF-node number
+       10                4               0.57094E-04               137           GWF-node number
+
+
+    10 CALLS TO SPARSE MATRIX SOLVER PACKAGE  IN FLOW TIME STEP   1 STRESS PERIOD   1
+
+ TOTAL OF      10OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    224.78    ,        142  -123.98    ,         23   4.8985    ,        129  -2.5648    ,         94  -2.6023    ,        124
+   0.91288    ,        138  0.84177E-01,        138 -0.71759E-02,        137  0.44686E-03,        136  0.57094E-04,        137
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                2               0.54947E-05                78           GWF-node number
+
+
+     1 CALLS TO SPARSE MATRIX SOLVER PACKAGE  IN FLOW TIME STEP   1 STRESS PERIOD   1
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.54947E-05,         78
+1
+                            STRESS PERIOD NO.    2, LENGTH =  1.0000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  1.0000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20               -63.465                   167           GWF-node number
+        2               16               -6.8158                    26           GWF-node number
+        3               14               -1.5501                    26           GWF-node number
+        4               14               0.70925                     6           GWF-node number
+        5               13              -0.44987                     7           GWF-node number
+        6               12              -0.43283                     7           GWF-node number
+        7               12              -0.35798                    19           GWF-node number
+        8               12               0.19339                    18           GWF-node number
+        9               11              -0.19330                    33           GWF-node number
+       10               11              -0.22352                    33           GWF-node number
+       11               11               0.89953E-01                32           GWF-node number
+       12                8              -0.25989E-01                48           GWF-node number
+       13                9              -0.22830E-01                48           GWF-node number
+       14                9              -0.20242E-01                48           GWF-node number
+       15                9              -0.18083E-01                48           GWF-node number
+       16                9              -0.16273E-01                48           GWF-node number
+       17                9              -0.14747E-01                48           GWF-node number
+       18                9              -0.13451E-01                48           GWF-node number
+       19                9              -0.12342E-01                48           GWF-node number
+       20                9              -0.11387E-01                48           GWF-node number
+       21                9              -0.10561E-01                48           GWF-node number
+       22                9              -0.98410E-02                48           GWF-node number
+       23                9              -0.92116E-02                48           GWF-node number
+       24                9              -0.86587E-02                48           GWF-node number
+       25                9              -0.81713E-02                48           GWF-node number
+       26                8              -0.77410E-02                48           GWF-node number
+       27                8              -0.73588E-02                48           GWF-node number
+       28                8              -0.70193E-02                48           GWF-node number
+       29                8              -0.67172E-02                48           GWF-node number
+       30                8              -0.64481E-02                48           GWF-node number
+       31                8              -0.62083E-02                48           GWF-node number
+       32                8              -0.59948E-02                48           GWF-node number
+       33                8              -0.58047E-02                48           GWF-node number
+       34                8              -0.56360E-02                48           GWF-node number
+       35                8              -0.54866E-02                48           GWF-node number
+       36                8              -0.53549E-02                48           GWF-node number
+       37                8              -0.52396E-02                48           GWF-node number
+       38                8              -0.51394E-02                48           GWF-node number
+       39                8              -0.50533E-02                48           GWF-node number
+       40                8              -0.49806E-02                48           GWF-node number
+       41                8              -0.49205E-02                48           GWF-node number
+       42                8              -0.48725E-02                48           GWF-node number
+       43                8              -0.48361E-02                48           GWF-node number
+       44                8              -0.48110E-02                48           GWF-node number
+       45                8              -0.47970E-02                48           GWF-node number
+       46                8              -0.47941E-02                48           GWF-node number
+       47                8              -0.48021E-02                48           GWF-node number
+       48                8              -0.48213E-02                48           GWF-node number
+       49                8              -0.48517E-02                48           GWF-node number
+       50                8              -0.48936E-02                48           GWF-node number
+       51                8              -0.49476E-02                48           GWF-node number
+       52                8              -0.50142E-02                48           GWF-node number
+       53                8              -0.50939E-02                48           GWF-node number
+       54                8              -0.51877E-02                48           GWF-node number
+       55                8              -0.52965E-02                48           GWF-node number
+       56                8              -0.54215E-02                48           GWF-node number
+       57                8              -0.55641E-02                48           GWF-node number
+       58                8              -0.57260E-02                48           GWF-node number
+       59                8              -0.59091E-02                48           GWF-node number
+       60                8              -0.61156E-02                48           GWF-node number
+       61                8              -0.63485E-02                48           GWF-node number
+       62                8              -0.66108E-02                48           GWF-node number
+       63                8              -0.69063E-02                48           GWF-node number
+       64                8              -0.72398E-02                48           GWF-node number
+       65                8              -0.76166E-02                48           GWF-node number
+       66                9              -0.80427E-02                48           GWF-node number
+       67                9              -0.85274E-02                48           GWF-node number
+       68                9              -0.90799E-02                48           GWF-node number
+       69                9              -0.97124E-02                48           GWF-node number
+       70                9              -0.10440E-01                48           GWF-node number
+       71                9              -0.11281E-01                48           GWF-node number
+       72                9              -0.12260E-01                48           GWF-node number
+       73                9              -0.13407E-01                48           GWF-node number
+       74                9              -0.14763E-01                48           GWF-node number
+       75                9              -0.16380E-01                48           GWF-node number
+       76                9              -0.18330E-01                48           GWF-node number
+       77               10              -0.20708E-01                48           GWF-node number
+       78               10              -0.23653E-01                48           GWF-node number
+       79               10              -0.27358E-01                48           GWF-node number
+       80               10              -0.32115E-01                48           GWF-node number
+       81               10              -0.38366E-01                48           GWF-node number
+       82               10              -0.46823E-01                48           GWF-node number
+       83               11              -0.58689E-01                48           GWF-node number
+       84               11              -0.76140E-01                48           GWF-node number
+       85               11               0.34929E-01                47           GWF-node number
+       86                9               0.95851E-02                63           GWF-node number
+       87                9               0.65971E-02                63           GWF-node number
+       88                8               0.45101E-02                63           GWF-node number
+       89                7               0.30809E-02                63           GWF-node number
+       90                7               0.21029E-02                63           GWF-node number
+       91                6               0.14367E-02                63           GWF-node number
+       92                5               0.98149E-03                63           GWF-node number
+       93                5               0.66857E-03                63           GWF-node number
+       94                5               0.45473E-03                63           GWF-node number
+       95                4               0.30916E-03                63           GWF-node number
+       96                4               0.21060E-03                63           GWF-node number
+       97                4               0.14312E-03                63           GWF-node number
+       98                3               0.96362E-04                63           GWF-node number
+
+
+    98 CALLS TO SPARSE MATRIX SOLVER PACKAGE  IN FLOW TIME STEP   1 STRESS PERIOD   2
+
+ TOTAL OF      98OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -63.465    ,        167  -6.8158    ,         26  -1.5501    ,         26  0.70925    ,          6 -0.44987    ,          7
+  -0.43283    ,          7 -0.35798    ,         19  0.19339    ,         18 -0.19330    ,         33 -0.22352    ,         33
+   0.89953E-01,         32 -0.25989E-01,         48 -0.22830E-01,         48 -0.20242E-01,         48 -0.18083E-01,         48
+  -0.16273E-01,         48 -0.14747E-01,         48 -0.13451E-01,         48 -0.12342E-01,         48 -0.11387E-01,         48
+  -0.10561E-01,         48 -0.98410E-02,         48 -0.92116E-02,         48 -0.86587E-02,         48 -0.81713E-02,         48
+  -0.77410E-02,         48 -0.73588E-02,         48 -0.70193E-02,         48 -0.67172E-02,         48 -0.64481E-02,         48
+  -0.62083E-02,         48 -0.59948E-02,         48 -0.58047E-02,         48 -0.56360E-02,         48 -0.54866E-02,         48
+  -0.53549E-02,         48 -0.52396E-02,         48 -0.51394E-02,         48 -0.50533E-02,         48 -0.49806E-02,         48
+  -0.49205E-02,         48 -0.48725E-02,         48 -0.48361E-02,         48 -0.48110E-02,         48 -0.47970E-02,         48
+  -0.47941E-02,         48 -0.48021E-02,         48 -0.48213E-02,         48 -0.48517E-02,         48 -0.48936E-02,         48
+  -0.49476E-02,         48 -0.50142E-02,         48 -0.50939E-02,         48 -0.51877E-02,         48 -0.52965E-02,         48
+  -0.54215E-02,         48 -0.55641E-02,         48 -0.57260E-02,         48 -0.59091E-02,         48 -0.61156E-02,         48
+  -0.63485E-02,         48 -0.66108E-02,         48 -0.69063E-02,         48 -0.72398E-02,         48 -0.76166E-02,         48
+  -0.80427E-02,         48 -0.85274E-02,         48 -0.90799E-02,         48 -0.97124E-02,         48 -0.10440E-01,         48
+  -0.11281E-01,         48 -0.12260E-01,         48 -0.13407E-01,         48 -0.14763E-01,         48 -0.16380E-01,         48
+  -0.18330E-01,         48 -0.20708E-01,         48 -0.23653E-01,         48 -0.27358E-01,         48 -0.32115E-01,         48
+  -0.38366E-01,         48 -0.46823E-01,         48 -0.58689E-01,         48 -0.76140E-01,         48  0.34929E-01,         47
+   0.95851E-02,         63  0.65971E-02,         63  0.45101E-02,         63  0.30809E-02,         63  0.21029E-02,         63
+   0.14367E-02,         63  0.98149E-03,         63  0.66857E-03,         63  0.45473E-03,         63  0.30916E-03,         63
+   0.21060E-03,         63  0.14312E-03,         63  0.96362E-04,         63
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               0.65951E-04                63           GWF-node number
+
+
+     1 CALLS TO SPARSE MATRIX SOLVER PACKAGE  IN FLOW TIME STEP   1 STRESS PERIOD   2
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.65951E-04,         63
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2014/12/01 15:32:35
+ Elapsed run time:  3 Minutes, 41.276 Seconds
+
+ Normal termination of simulation

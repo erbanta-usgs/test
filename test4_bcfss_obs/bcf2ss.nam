@@ -1,0 +1,32 @@
+LIST  bcf2ss.lst           REPLACE
+IC8  bcf2ss.ic             OLD
+NPF8  bcf2ss.npf            OLD
+WEL8  bcf2ss.wel            OLD
+RIV8  bcf2ss.riv            OLD
+RCH8  bcf2ss.rch            OLD
+OC8   bcf2ss.oc             OLD
+DIS8  bcf2ss.dis            OLD
+GHB8  bcf2ss.ghb            OLD
+OBS8  bcf2ss.obs            OLD
+#OBS  bcf2ss_unstruct.obs   OLD
+DATA(BINARY) bcf2ss.cbc    REPLACE
+#DATA(BINARY) bcf2ss.hds    REPLACE
+DATA bcf2ss.hds            REPLACE
+DATA ibound.out            REPLACE
+#
+# Output: single observations
+DATA head_obs.csv          REPLACE
+DATA riv_obs.csv           REPLACE
+#DATA(BINARY) head_obs.bsv  REPLACE
+DATA(BINARY) riv_obs.bsv   REPLACE
+#
+# Output: continuous observations
+DATA ghb_flows.csv         REPLACE
+DATA head_hydrographs.csv  REPLACE
+DATA riv_flows.csv         REPLACE
+DATA intercell_flow_obs1.csv       REPLACE
+DATA intercell_flow_obs2.csv       REPLACE
+DATA intercell_flows.csv           REPLACE
+#DATA(BINARY) ghb_flows.bsv         REPLACE
+#DATA(BINARY) head_hydrographs.bsv  REPLACE
+#DATA(BINARY) riv_flows.bsv         REPLACE

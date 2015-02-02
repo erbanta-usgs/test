@@ -1,0 +1,5 @@
+# The LIST block is required.
+BEGIN LIST
+ ts1.ts
+ ts2.ts
+END LIST

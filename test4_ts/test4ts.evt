@@ -1,0 +1,32 @@
+# ETS input file
+BEGIN OPTIONS
+  HIGHEST_ACTIVE
+  PRINT_INPUT
+  PRINT_FLOWS
+  SAVE_FLOWS
+  PACKAGENAME 'ET Segs'
+  nseg 3
+END OPTIONS
+
+begin dimensions
+  MAXBOUND 150
+end dimensions
+
+BEGIN PERIOD 1
+  NLARRAY
+    CONSTANT 1
+  surface
+    constant 140.0
+  rate
+    constant 0.0004
+  depth
+    constant 10.0
+  pxdp
+    constant 0.2
+  petm
+    constant 0.3
+  pxdp
+    constant 0.5
+  petm
+    constant 0.1
+end period    

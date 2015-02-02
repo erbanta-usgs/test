@@ -1,0 +1,31 @@
+#option block.  Note -- no comments allowed on aux line
+begin options
+  PACKAGENAME 'River' (16 character limit)
+  PRINT_INPUT (echo input to listing file)
+  PRINT_FLOWS  (print the flows to the listing file)
+  SAVE_FLOWS  test4ts.cbc (file for binary flow information; must be opened using DATA(BINARY))
+  BOUNDNAMES  (specify name for any boundary specified as an observation boundary, if cell node or i,j,k is not used)
+  TIMESERIESFILE  time_series_file_1.ts
+  TIMESERIESFILE  time_series_file_2.ts
+#Other packages may specify the same TIMESERIESFILE and reuse the same time series.
+#To specify multiple time-series files, enter a TIMESERIESFILE line for each file.
+end options
+
+begin dimensions
+  MAXBOUND 10
+end dimensions
+
+begin period 1
+#    layer       row       col    stage           cond       rbot  BoundName
+         1         1        15  river_stage_1    1001.      101.  
+         1         2        15  river_stage_1    1002.      102.  riv2
+         1         3        15  river_stage_2    1003.      103.  riv3
+         1         4        15  river_stage_2    1004.      104.
+         1         5        15  river_stage_3    1005.      105.
+         1         6        15  river_stage_3    1006.      106.
+         1         7        15  river_stage_4    1007.      107.  rivX
+         1         8        15  river_stage_4    1008.      108.  rivX
+         1         9        15  river_stage_5    1009.      109.  rivX
+         1        10        15  river_stage_5    1010.      110.
+end period
+

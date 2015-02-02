@@ -1,0 +1,43 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN INPUT_FILES
+IC8   test4_ets_list.ic    OLD
+NPF8  test4_ets_list.npf   OLD
+WEL8  test4_ets_list.wel   OLD
+RIV8  test4_ets_list.riv   OLD
+RCH8  test4_ets_list.rch   OLD
+OC8   test4_ets_list.oc    OLD
+DIS8  test4_ets_list.dis   OLD
+GHB8  test4_ets_list.ghb   OLD
+STO8  test4_ets_list.sto   OLD
+EVT8  test4_ets_list.evt   OLD
+OBS8  test4_ets_list.obs   OLD
+CHD8  test4_ets_list.chd   OLD
+END INPUT_FILES
+
+BEGIN OUTPUT_FILES
+LIST  test4_ets_list.lst   REPLACE
+#
+# Output DATA and DATA(BINARY) files
+#
+DATA(BINARY) test4_ets_list.cbc    REPLACE
+DATA         test4_ets_list.hds    REPLACE
+DATA         ibound.out            REPLACE
+#
+# Output: single observations
+DATA head_obs.csv                  REPLACE
+DATA riv_obs.csv                   REPLACE
+DATA ghb_obs.csv                   REPLACE
+#
+# Output: continuous observations
+DATA ghb_flows.csv                 REPLACE
+DATA head_hydrographs.csv          REPLACE
+DATA riv_flows.csv                 REPLACE
+DATA intercell_flow_obs1.csv       REPLACE
+DATA intercell_flow_obs2.csv       REPLACE
+DATA intercell_flows.csv           REPLACE
+DATA chd_flows.csv                 REPLACE
+DATA chd_obs.csv                   REPLACE
+END OUTPUT_FILES
+

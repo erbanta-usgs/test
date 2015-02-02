@@ -1,0 +1,19 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN TIMING
+  TDIS simulation.tdis
+END TIMING
+
+BEGIN MODELS
+  #modeltype      namefile          modelname
+         GWF    test4_ets_list.nam    GWF_1
+END MODELS
+
+BEGIN EXCHANGES
+END EXCHANGES
+
+BEGIN SOLUTION_GROUP 1
+  MXITER 10
+  NUMERICAL model.sms GWF_1
+END SOLUTION_GROUP

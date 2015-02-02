@@ -1,0 +1,21 @@
+BEGIN OPTIONS
+  TIME_UNITS DAYS
+END OPTIONS
+
+BEGIN DIMENSIONS
+  NPER 8
+END DIMENSIONS
+
+BEGIN STRESS_PERIODS
+# perlen nstp tsmult ss/tr
+    1.0    1    1.0    SS
+   31.0   31    1.0    TR  (Jan)
+   28.0   28    1.0    TR  (Feb)
+   31.0   31    1.0    TR  (Mar)
+   30.0   30    1.0    TR  (Apr)
+   31.0   31    1.0    TR  (May)
+  183.0  183    1.0    TR  (Jun-Nov)
+   31.0   31    1.0    TR  (Dec)
+# totals
+# 366.0  366
+END STRESS_PERIODS

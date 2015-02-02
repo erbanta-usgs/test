@@ -1,0 +1,1750 @@
+
+ OPENED mf2015.nam
+ FILE TYPE:NAM   UNIT 1001   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+                                  MODFLOW-2015
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                              SIMULATION LIST FILE
+
+ READING SIMULATION OPTIONS
+ END OF SIMULATION OPTIONS
+
+ READING SIMULATION TIMING
+
+ OPENED simulation.tdis
+ FILE TYPE:TDIS   UNIT 1002   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
+ VERSION 1 : 11/13/2014 - INPUT READ FROM UNIT 1002
+ PROCESSING TDIS OPTIONS
+    MODEL TIME UNIT IS DAYS
+ END OF TDIS OPTIONS
+ PROCESSING TDIS DIMENSIONS
+    6 STRESS PERIOD(S) IN SIMULATION
+ END OF TDIS DIMENSIONS
+ PROCESSING TDIS STRESS_PERIODS
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT
+ ----------------------------------------------------------------------------
+        1        1.0000000          1                    1.000
+        2         2.000000         10                    1.000
+        3         2.000000         10                    1.000
+        4         2.000000         10                    1.000
+        5         2.000000         10                    1.000
+        6         2.000000         10                    1.000
+ END OF TDIS STRESS_PERIODS
+ END OF SIMULATION TIMING
+
+ READING SIMULATION MODELS
+ #modeltype      namefile          modelname
+ END OF SIMULATION MODELS
+
+ READING SIMULATION EXCHANGES
+ END OF SIMULATION EXCHANGES
+
+ READING SOLUTION_GROUP
+
+ Creating solution: SLN_1               
+
+ OPENED model.sms
+ FILE TYPE:SMS   UNIT 1003   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ END OF SIMULATION SOLUTION_GROUP
+
+ SMS -- SPARSE MATRIX SOLVER PACKAGE, VERSION 8, 5/2/2005
+         INPUT READ FROM UNIT 1003
+
+ PROCESSING SMS OPTIONS
+ END OF SMS OPTIONS
+
+ PROCESSING SMS NONLINEAR
+ END OF SMS NONLINEAR DATA
+ OUTER ITERATION CONVERGENCE CRITERION (HCLOSE) =    0.100000E-03
+ MAXIMUM NUMBER OF OUTER ITERATIONS (MXITER)     =       500
+ SOLVER PRINTOUT INDEX             (IPRSMS)      =         1
+ NONLINEAR ITERATION METHOD    (NONLINMETH)      =         0
+ LINEAR SOLUTION METHOD           (LINMETH)      =         2
+ ***PICARD LINEARIZATION WILL BE USED***
+ 
+ ***PCGU LINEAR SOLVER WILL BE USED***
+
+ PCGU -- UNSTRUCTURED CONJUGATE-GRADIENT SOLUTION PACKAGE, VERSION 8.02, 08/13/2013
+
+ PROCESSING PCGU DATA
+ END OF PCGU
+
+              SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF      1 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF    100 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = CG        
+ MATRIX PRECONDITIONING TYPE           = MOD. INCOMPLETE LU  
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-03
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E-02
+ RESIDUAL CONVERGENCE OPTION           =        0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.97000E+00
+  ONLY USED WITH MILU0 PRECONDITIONER
+
+
+ 
+1
+                            STRESS PERIOD NO.    1, LENGTH =  1.0000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  1.0000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               17                290.71                   300           GWF-node number
+        2               21               -209.21                    88           GWF-node number
+        3               18                32.927                    87           GWF-node number
+        4               14               -2.4030                    85           GWF-node number
+        5               14               -2.6599                    87           GWF-node number
+        6               13              -0.41705                    87           GWF-node number
+        7               10               0.10915E-01                84           GWF-node number
+        8                6              -0.31062E-03               141           GWF-node number
+        9                1              -0.12747E-04               100           GWF-node number
+
+
+     9 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   1
+
+ TOTAL OF       9OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    290.71    ,        300  -209.21    ,         88   32.927    ,         87  -2.4030    ,         85  -2.6599    ,         87
+  -0.41705    ,         87  0.10915E-01,         84 -0.31062E-03,        141 -0.12747E-04,        100
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.62711E-05               293           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   1
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.62711E-05,        293
+1
+                            STRESS PERIOD NO.    2, LENGTH =   2.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =    10
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  0.2000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -20.433                   184           GWF-node number
+        2                1               0.11177E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -20.433    ,        184  0.11177E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -17.478                   184           GWF-node number
+        2                1               0.11116E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -17.478    ,        184  0.11116E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -15.021                   184           GWF-node number
+        2                1               0.11053E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -15.021    ,        184  0.11053E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -12.969                   184           GWF-node number
+        2                3                1.5313                   184           GWF-node number
+        3                1              -0.15299E-05               184           GWF-node number
+
+
+     3 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   2
+
+ TOTAL OF       3OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -12.969    ,        184   1.5313    ,        184 -0.15299E-05,        184
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.4878                   169           GWF-node number
+        2                1               0.10916E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.4878    ,        169  0.10916E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2972                   169           GWF-node number
+        2                1               0.10844E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2972    ,        169  0.10844E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2521                   259           GWF-node number
+        2                1               0.10770E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2521    ,        259  0.10770E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0902                   259           GWF-node number
+        2                1               0.10694E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0902    ,        259  0.10694E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2262                   259           GWF-node number
+        2                1               0.10616E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2262    ,        259  0.10616E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0713                   259           GWF-node number
+        2                1               0.10537E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0713    ,        259  0.10537E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2128                   259           GWF-node number
+        2                1               0.10458E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2128    ,        259  0.10458E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0623                   259           GWF-node number
+        2                1               0.10378E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0623    ,        259  0.10378E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2074                   259           GWF-node number
+        2                1               0.10297E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2074    ,        259  0.10297E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0598                   259           GWF-node number
+        2                1               0.10216E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0598    ,        259  0.10216E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2071                   259           GWF-node number
+        2                1               0.10135E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2071    ,        259  0.10135E-05,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0612                   259           GWF-node number
+        2                1               0.10053E-05                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0612    ,        259  0.10053E-05,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2099                   259           GWF-node number
+        2                1               0.99721E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2099    ,        259  0.99721E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0651                   259           GWF-node number
+        2                1               0.98910E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0651    ,        259  0.98910E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2146                   259           GWF-node number
+        2                1               0.98101E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2146    ,        259  0.98101E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0704                   259           GWF-node number
+        2                1               0.97295E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   2
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0704    ,        259  0.97295E-06,         31
+1
+                            STRESS PERIOD NO.    3, LENGTH =   2.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =    10
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  0.2000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                2.2198                   225           GWF-node number
+        2                1               0.95886E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    2.2198    ,        225  0.95886E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0766                   259           GWF-node number
+        2                1               0.95093E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0766    ,        259  0.95093E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2268                   259           GWF-node number
+        2                1               0.94306E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2268    ,        259  0.94306E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0831                   259           GWF-node number
+        2                1               0.93524E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0831    ,        259  0.93524E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2334                   259           GWF-node number
+        2                1               0.92748E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2334    ,        259  0.92748E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0897                   259           GWF-node number
+        2                1               0.91978E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0897    ,        259  0.91978E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2400                   259           GWF-node number
+        2                1               0.91215E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2400    ,        259  0.91215E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.0963                   259           GWF-node number
+        2                1               0.90458E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.0963    ,        259  0.90458E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2465                   259           GWF-node number
+        2                1               0.89709E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2465    ,        259  0.89709E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1027                   259           GWF-node number
+        2                1               0.88967E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1027    ,        259  0.88967E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2527                   259           GWF-node number
+        2                1               0.88233E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2527    ,        259  0.88233E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1088                   259           GWF-node number
+        2                1               0.87506E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1088    ,        259  0.87506E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2587                   259           GWF-node number
+        2                1               0.86787E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2587    ,        259  0.86787E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1146                   259           GWF-node number
+        2                1               0.86076E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1146    ,        259  0.86076E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2644                   259           GWF-node number
+        2                1               0.85373E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2644    ,        259  0.85373E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1201                   259           GWF-node number
+        2                1               0.84678E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1201    ,        259  0.84678E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2698                   259           GWF-node number
+        2                1               0.83991E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2698    ,        259  0.83991E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1254                   259           GWF-node number
+        2                1               0.83312E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1254    ,        259  0.83312E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2749                   259           GWF-node number
+        2                1               0.82642E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2749    ,        259  0.82642E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1303                   259           GWF-node number
+        2                1               0.81979E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   3
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1303    ,        259  0.81979E-06,         31
+1
+                            STRESS PERIOD NO.    4, LENGTH =   2.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =    10
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  0.2000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2796                   259           GWF-node number
+        2                1               0.81325E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2796    ,        259  0.81325E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1349                   259           GWF-node number
+        2                1               0.80678E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1349    ,        259  0.80678E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2841                   259           GWF-node number
+        2                1               0.80040E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2841    ,        259  0.80040E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1392                   259           GWF-node number
+        2                1               0.79409E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1392    ,        259  0.79409E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2883                   259           GWF-node number
+        2                1               0.78787E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2883    ,        259  0.78787E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1433                   259           GWF-node number
+        2                1               0.78172E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1433    ,        259  0.78172E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2922                   259           GWF-node number
+        2                1               0.77566E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2922    ,        259  0.77566E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1471                   259           GWF-node number
+        2                1               0.76967E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1471    ,        259  0.76967E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2959                   259           GWF-node number
+        2                1               0.76375E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2959    ,        259  0.76375E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1506                   259           GWF-node number
+        2                1               0.75792E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1506    ,        259  0.75792E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.2993                   259           GWF-node number
+        2                1               0.75216E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.2993    ,        259  0.75216E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1540                   259           GWF-node number
+        2                1               0.74647E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1540    ,        259  0.74647E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.3025                   259           GWF-node number
+        2                1               0.74085E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.3025    ,        259  0.74085E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.1571                   259           GWF-node number
+        2                1               0.73531E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.1571    ,        259  0.73531E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3               -1.3056                   259           GWF-node number
+        2                3                1.2265                   259           GWF-node number
+        3                1              -0.12254E-05               259           GWF-node number
+
+
+     3 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   4
+
+ TOTAL OF       3OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -1.3056    ,        259   1.2265    ,        259 -0.12254E-05,        259
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.32390                   244           GWF-node number
+        2                1               0.72444E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.32390    ,        244  0.72444E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.29385                   244           GWF-node number
+        2                1               0.71912E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.29385    ,        244  0.71912E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.26786                   244           GWF-node number
+        2                1               0.71385E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.26786    ,        244  0.71385E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.24529                   244           GWF-node number
+        2                1               0.70866E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.24529    ,        244  0.70866E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.22592                   274           GWF-node number
+        2                1               0.70354E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   4
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.22592    ,        274  0.70354E-06,         31
+1
+                            STRESS PERIOD NO.    5, LENGTH =   2.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =    10
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  0.2000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.20901                   274           GWF-node number
+        2                1               0.69848E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.20901    ,        274  0.69848E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.19409                   274           GWF-node number
+        2                1               0.69348E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.19409    ,        274  0.69348E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.18091                   274           GWF-node number
+        2                1               0.68855E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.18091    ,        274  0.68855E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.16915                   274           GWF-node number
+        2                1               0.68368E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.16915    ,        274  0.68368E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.15867                   274           GWF-node number
+        2                1               0.67888E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.15867    ,        274  0.67888E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.14924                   274           GWF-node number
+        2                1               0.67413E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.14924    ,        274  0.67413E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.14077                   274           GWF-node number
+        2                1               0.66945E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.14077    ,        274  0.66945E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.13308                   274           GWF-node number
+        2                1               0.66482E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.13308    ,        274  0.66482E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.12685                   273           GWF-node number
+        2                1               0.66025E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.12685    ,        273  0.66025E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.12169                   273           GWF-node number
+        2                1               0.65574E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.12169    ,        273  0.65574E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.11679                   273           GWF-node number
+        2                1               0.65129E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.11679    ,        273  0.65129E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.11215                   273           GWF-node number
+        2                1               0.64689E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.11215    ,        273  0.64689E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.10776                   273           GWF-node number
+        2                1               0.64254E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.10776    ,        273  0.64254E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.10428                   289           GWF-node number
+        2                1               0.63825E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.10428    ,        289  0.63825E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.10113                   289           GWF-node number
+        2                1               0.63401E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.10113    ,        289  0.63401E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.98080E-01               289           GWF-node number
+        2                1               0.62983E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.98080E-01,        289  0.62983E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.95119E-01               289           GWF-node number
+        2                1               0.62569E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.95119E-01,        289  0.62569E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.92250E-01               289           GWF-node number
+        2                1               0.62161E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.92250E-01,        289  0.62161E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                2              -0.89472E-01               289           GWF-node number
+        2                1               0.61758E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.89472E-01,        289  0.61758E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                2              -0.86784E-01               289           GWF-node number
+        2                1               0.61359E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   5
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.86784E-01,        289  0.61359E-06,         31
+1
+                            STRESS PERIOD NO.    6, LENGTH =   2.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =    10
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =  0.2000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.84096E-01               289           GWF-node number
+        2                1               0.60965E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.84096E-01,        289  0.60965E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.81428E-01               289           GWF-node number
+        2                1               0.60576E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.81428E-01,        289  0.60576E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.78795E-01               289           GWF-node number
+        2                1               0.60192E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.78795E-01,        289  0.60192E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.76206E-01               289           GWF-node number
+        2                1               0.59813E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.76206E-01,        289  0.59813E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.73670E-01               289           GWF-node number
+        2                1               0.59439E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.73670E-01,        289  0.59439E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.71192E-01               289           GWF-node number
+        2                1               0.59070E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.71192E-01,        289  0.59070E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.68775E-01               289           GWF-node number
+        2                1               0.58706E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.68775E-01,        289  0.58706E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.66422E-01               289           GWF-node number
+        2                1               0.58346E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.66422E-01,        289  0.58346E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.64134E-01               289           GWF-node number
+        2                1               0.57991E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.64134E-01,        289  0.57991E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.61912E-01               289           GWF-node number
+        2                1               0.57641E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.61912E-01,        289  0.57641E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.59755E-01               289           GWF-node number
+        2                1               0.57295E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.59755E-01,        289  0.57295E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3              -0.57663E-01               289           GWF-node number
+        2                3               0.72782                   259           GWF-node number
+        3                1               0.11099E-08               217           GWF-node number
+
+
+     3 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   6
+
+ TOTAL OF       3OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.57663E-01,        289  0.72782    ,        259  0.11099E-08,        217
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                6.8520                   259           GWF-node number
+        2                1               0.56618E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    6.8520    ,        259  0.56618E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                5.8590                   259           GWF-node number
+        2                1               0.56286E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    5.8590    ,        259  0.56286E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                5.0329                   259           GWF-node number
+        2                1               0.55959E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    5.0329    ,        259  0.55959E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                4.3431                   259           GWF-node number
+        2                1               0.55636E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    4.3431    ,        259  0.55636E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                3.7650                   259           GWF-node number
+        2                1               0.55317E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    3.7650    ,        259  0.55317E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                3.2785                   259           GWF-node number
+        2                1               0.55003E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    3.2785    ,        259  0.55003E-06,         31
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                2.8677                   259           GWF-node number
+        2                1               0.54693E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    2.8677    ,        259  0.54693E-06,         31
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                3                2.5195                   259           GWF-node number
+        2                1               0.54387E-06                31           GWF-node number
+
+
+     2 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   6
+
+ TOTAL OF       2OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    2.5195    ,        259  0.54387E-06,         31
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2015/01/26 13:21:37
+ Elapsed run time:  0.565 Seconds
+
+ Normal termination of simulation.

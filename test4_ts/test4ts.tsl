@@ -1,0 +1,6 @@
+# The LIST block is required.
+BEGIN LIST
+ well-1_rate.ts
+ well-2_rate.ts
+ riv_stage.ts
+END LIST
