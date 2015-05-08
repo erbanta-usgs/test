@@ -2,7 +2,7 @@ begin options
   precision single
   digits 10
   structured
-  echo
+  print_input
 end options
 
 #
@@ -102,6 +102,7 @@ begin single chd_obs.csv
   chdf8.0      chd-flow   8.0   chd_gp  # constant-head flow at chd_gp
   chdf10.0     chd-flow  10.0   chd_gp  # constant-head flow at chd_gp
   chdf11.0     chd-flow  11.0   chd_gp  # constant-head flow at chd_gp
+  chd_1_4_1_2  chd-flow   2.0   1  4  1 
 end single
 
 #
@@ -116,6 +117,7 @@ end single
 # for structured option, identify boundary by layer, row, column
 begin continuous riv_flows.csv
 #begin continuous riv_flows.bsv
+  riv2-1-15      riv 2 1 15
   riv2-3-15      riv 2 3 15      # sum of flows for all riv cells at lay 2 row 3 col 15
   riv2-4-15      riv 2 4 15      # sum of flows for all riv cells at lay 2 row 4 col 15
   riv2-5-15      riv 2 5 15      # sum of flows for all riv cells at lay 2 row 5 col 15
@@ -145,5 +147,6 @@ end continuous
 begin continuous chd_flows.csv
 #begin continuous chd_flows.bsv
   chdf_chd_gp      chd-flow    chd_gp  # constant-head flow
+  chdc_1_4_1         chd-flow   1  4  1 
 end continuous
 

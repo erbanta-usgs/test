@@ -14,8 +14,6 @@ begin npfdata
   icelltype structured
     constant 1
     constant 0
-  icellavg
-    constant 0
   wetdry structured
     internal 1. (free) 1
  2.000000E+00  2.000000E+00  2.000000E+00  2.000000E+00  2.000000E+00 2.000000E+00 2.000000E+00 2.000000E+00 -2.000000E+00 -2.000000E+00
