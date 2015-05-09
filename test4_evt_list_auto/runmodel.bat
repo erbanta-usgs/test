@@ -1,2 +1,6 @@
-..\..\msvs\mf2015\debug\mf2015.exe
+@echo off
+
+REM mf2015d.exe is the Debug executable
+..\..\mf2015\bin\mf2015d.exe
+
 pause

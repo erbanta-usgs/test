@@ -1,8 +1,5 @@
 begin options
   save_FLOWS
-#  VFC  (turn on vertical flow correction).  Default is off?
-  CONSTANTCV (default is off)
-#  CVCORRECTION (default is off)
   REWET (if keyword found, turn on rewetting) 
   IWETIT 1 iwetit (default is 1 if not specified)
   WETFCT 1.
@@ -13,8 +10,6 @@ end options
 begin npfdata
   icelltype structured
     constant 1
-    constant 0
-  icellavg
     constant 0
   wetdry structured
     internal 1. (free) 1
