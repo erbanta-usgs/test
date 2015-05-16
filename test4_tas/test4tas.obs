@@ -69,15 +69,15 @@ begin single intercell_flow_obs2.csv
   icf2_10.8 intercell-flow 10.8  1 4 7  1 5 7  # intercell flow between node 67 (1,4,7) and node 82 (1,5,7)
 end single
 
-begin single chd_obs.csv
-  chd141-1.0      chd-flow   1.0   1  4  1  # constant-head flow at cell (1,4,1)
-  chd-1-2.0       chd-flow   2.0   chd-1    # constant-head flow at cell "chd-1" (1,1,1)
-  chd_gp-2.5      chd-flow   2.5   chd_gp   # constant-head flow at cells "chd_gp"
-  chd_gp-3.0      chd-flow   3.0   chd_gp   # constant-head flow at cells "chd_gp"
-  chd_gp-8.0      chd-flow   8.0   chd_gp   # constant-head flow at cells "chd_gp"
-  chd-10r10.0     chd-flow  10.0   chd-10   # constant-head flow at cell "chd-10" (1,10,1)
-  chd-10r11.0     chd-flow  11.0   chd-10   # constant-head flow at cell "chd-10" (1,10,1)
-end single
+#begin single chd_obs.csv
+#  chd141-1.0      chd-flow   1.0   1  4  1  # constant-head flow at cell (1,4,1)
+#  chd-1-2.0       chd-flow   2.0   chd-1    # constant-head flow at cell "chd-1" (1,1,1)
+#  chd_gp-2.5      chd-flow   2.5   chd_gp   # constant-head flow at cells "chd_gp"
+#  chd_gp-3.0      chd-flow   3.0   chd_gp   # constant-head flow at cells "chd_gp"
+#  chd_gp-8.0      chd-flow   8.0   chd_gp   # constant-head flow at cells "chd_gp"
+#  chd-10r10.0     chd-flow  10.0   chd-10   # constant-head flow at cell "chd-10" (1,10,1)
+#  chd-10r11.0     chd-flow  11.0   chd-10   # constant-head flow at cell "chd-10" (1,10,1)
+#end single
 
 # Blocks defining continuous observations
 
@@ -102,11 +102,11 @@ begin continuous intercell_flows.csv
   icf2      intercell-flow    2 4 7  2 5 7  # intercell flow between node 67 (2,4,7) and node 82 (2,5,7)
 end continuous
 
-begin continuous chd_flows.csv
-  chd_1-1-1      chd-flow    1  1 1  # constant-head flow at cell (1,1,1)
-  chd_1-4-1      chd-flow    1  4 1  # constant-head flow at cell (1,4,1)
-  chd_1-5-1      chd-flow    1  5 1  # constant-head flow at cell (1,5,1)
-  chd_1-6-1      chd-flow    1  6 1  # constant-head flow at cell (1,6,1)
-  chd_1-10-1     chd-flow    1 10 1  # constant-head flow at cell (1,10,1)
-end continuous
+#begin continuous chd_flows.csv
+#  chd_1-1-1      chd-flow    1  1 1  # constant-head flow at cell (1,1,1)
+#  chd_1-4-1      chd-flow    1  4 1  # constant-head flow at cell (1,4,1)
+#  chd_1-5-1      chd-flow    1  5 1  # constant-head flow at cell (1,5,1)
+#  chd_1-6-1      chd-flow    1  6 1  # constant-head flow at cell (1,6,1)
+#  chd_1-10-1     chd-flow    1 10 1  # constant-head flow at cell (1,10,1)
+#end continuous
 

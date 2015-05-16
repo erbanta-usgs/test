@@ -1,0 +1,18 @@
+begin options
+  save_FLOWS
+  IWETIT 1 iwetit (default is 1 if not specified)
+  WETFCT 1.
+  IHDWET 0 (0 or not 0)
+  HDRY 777.77 hdry
+end options
+
+begin npfdata
+  icelltype structured
+    constant 1
+    constant 0
+  hk structured
+    constant 4.0
+    constant 5.0e-1
+  vk
+    constant 0.01
+end npfdata

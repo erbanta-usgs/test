@@ -1,0 +1,28 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN INPUT_FILES
+  IC8   test_maw.ic
+  NPF8  test_maw.npf
+  CHD8  test_maw.chd
+  WEL8  test_maw.wel
+  RIV8  test_maw.riv
+  RCH8  test_maw.rch
+  OC8   test_maw.oc
+  DIS8  test_maw.dis
+  GHB8  test_maw.ghb
+  STO8  test_maw.sto
+  EVT8  test_maw.evt
+  MAW8  test_maw.mw
+END INPUT_FILES
+
+BEGIN OUTPUT_FILES
+  LIST  test_maw.lst    
+  #
+  # Output DATA and DATA(BINARY) files
+  #
+  DATA(BINARY) test_maw.cbc
+  DATA test_maw.hds
+  DATA ibound.out
+  #
+END OUTPUT_FILES

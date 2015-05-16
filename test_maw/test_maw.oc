@@ -1,0 +1,15 @@
+begin options
+  HEAD SAVE file test_maw.hds
+  BUDGET SAVE FILE test_maw.cbc
+  head print format 4
+  head save format (15f7.2) label
+  ibound save format (15i2) label
+  ibound save file ibound.out
+end options
+
+begin PERIOD 1
+  BUDGET print all
+  HEAD print all
+  BUDGET save all
+  HEAD save all
+end period

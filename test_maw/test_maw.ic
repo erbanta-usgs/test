@@ -1,0 +1,19 @@
+begin options
+end options
+
+begin icdata
+  strt structured
+    CONSTANT   100.0  Initial Head layer   1
+    CONSTANT   100.0  Initial Head layer   2
+end icdata
+
+
+begin basdata
+  ibound structured
+    CONSTANT          1  IBOUND layer   1
+    CONSTANT          1  IBOUND layer   2
+  strt structured
+    CONSTANT   100.0  Initial Head layer   1
+    CONSTANT   100.0  Initial Head layer   2
+end basdata
+

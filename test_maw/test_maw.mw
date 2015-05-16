@@ -1,0 +1,36 @@
+#option block.  Note -- no comments allowed on aux line
+begin options
+  PACKAGENAME 'Multi-Aq Well' (16 character limit)
+  PRINT_INPUT (echo input to listing file)
+  PRINT_FLOWS  (print the flows to the listing file)
+  BOUNDNAMES
+  NEWTON
+  TIMESERIESFILE maw_rates.ts
+end options
+
+begin dimensions
+  NMAWWELLS 1
+end dimensions
+
+begin wells
+#      no  radius  bottom  strt     condeqn    ngwnodes  name          
+  well  1   0.15   -45.0   100.    SPECIFIED        2    'ma_well'       
+end wells
+
+begin well_connections
+#        conn  l  r  c  stop   sbot      K     rskin
+  well 1    1  1  5  5   150   -50    111.53      0
+  well 1    2  2  5  5   150   -50    446.62      0
+end well_connections
+
+begin period 1 steady-state
+  well 1 rate mawq1
+end period
+
+begin period 2
+  well 1 rate 0.
+end period
+
+begin period 3
+  well 1 rate mawq2
+end period

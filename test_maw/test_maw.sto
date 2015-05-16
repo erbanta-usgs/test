@@ -1,25 +1,22 @@
 begin options
   SAVE_FLOWS
   #STORAGECOEFFICIENT uncomment if SS is entered as storage coefficient
+  NEWTON
 end options
 
 begin stodata
-  #iconvert(nodes) is 0:confined, 1:convertible
   iconvert
     constant 1
-  #ss(nodes) specific storage
   ss
-    constant 1.e-5
-  #sy(nodes) specific yield
+    constant 1.0e-5
   sy
     constant 0.2
 end stodata
 
 begin period 1
   steady-state
-end period
+end period 1
 
 begin period 2
   transient
-end period
-
+end period 2

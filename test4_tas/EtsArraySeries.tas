@@ -1,5 +1,5 @@
 BEGIN ATTRIBUTES
-  NAME    EtsArraySeries
+  NAME    EtRateSeries
   METHOD  Linear
 END ATTRIBUTES
 0.0

@@ -2,54 +2,51 @@ BEGIN OPTIONS
 END OPTIONS
 
 BEGIN INPUT_FILES
-IC8  test4tas.ic    
-NPF8  test4tas.npf     
-#CHD8  test4tas.chd     
-WEL8  test4tas.wel     
-RIV8  test4tas-example.riv     
-RCH8  test4tas.rch     
-OC8   test4tas.oc      
-#OC8   test4tas-brief.oc      
-DIS8  test4tas.dis     
-GHB8  test4tas.ghb     
-STO8  test4tas.sto     
-EVT8  test4tas.evt     
-OBS8  test4tas.obs     
+  IC8  test4tas.ic    
+  NPF8  test4tas.npf     
+  #CHD8  test4tas.chd     
+  WEL8  test4tas.wel     
+  RIV8  test4tas-example.riv     
+  RCH8  test4tas.rch     
+  OC8   test4tas.oc      
+  #OC8   test4tas-brief.oc      
+  DIS8  test4tas.dis     
+  GHB8  test4tas.ghb     
+  STO8  test4tas.sto     
+  EVT8  test4tas.evt     
+  OBS8  test4tas.obs     
 END INPUT_FILES
 
 BEGIN OUTPUT_FILES
-LIST  test4tas.lst    
-#
-# Output DATA and DATA(BINARY) files
-#
-DATA(BINARY) test4tas.cbc    
-#DATA(BINARY) test4tas.hds    
-DATA test4tas.hds            
-DATA ibound.out             
-#
-# Output: single observations
-DATA head_obs.csv          
-DATA riv_obs.csv           
-DATA ghb_obs.csv           
-#DATA(BINARY) head_obs.bsv  
-#DATA(BINARY) riv_obs.bsv   
-#
-# Output: continuous observations
-DATA ghb_flows.csv         
-DATA head_hydrographs.csv  
-DATA riv_flows.csv         
-DATA intercell_flow_obs1.csv       
-DATA intercell_flow_obs2.csv       
-DATA intercell_flows.csv           
-DATA chd_flows.csv                 
-DATA chd_obs.csv                   
-#DATA(BINARY) ghb_flows.bsv            
-#DATA(BINARY) head_hydrographs.bsv     
-#DATA(BINARY) riv_flows.bsv            
-#DATA(BINARY) intercell_flow_obs1.bsv  
-#DATA(BINARY) intercell_flow_obs2.bsv  
-#DATA(BINARY) intercell_flows.bsv      
+  LIST  test4tas.lst    
+  #
+  # Output DATA and DATA(BINARY) files
+  #
+  DATA(BINARY) test4tas.cbc    
+  #DATA(BINARY) test4tas.hds    
+  DATA test4tas.hds            
+  DATA ibound.out             
+  #
+  # Output: single observations
+  DATA head_obs.csv          
+  DATA riv_obs.csv           
+  DATA ghb_obs.csv           
+  #DATA(BINARY) head_obs.bsv  
+  #DATA(BINARY) riv_obs.bsv   
+  #
+  # Output: continuous observations
+  DATA ghb_flows.csv         
+  DATA head_hydrographs.csv  
+  DATA riv_flows.csv         
+  DATA intercell_flow_obs1.csv       
+  DATA intercell_flow_obs2.csv       
+  DATA intercell_flows.csv           
+  DATA chd_flows.csv                 
+  DATA chd_obs.csv                   
+  #DATA(BINARY) ghb_flows.bsv            
+  #DATA(BINARY) head_hydrographs.bsv     
+  #DATA(BINARY) riv_flows.bsv            
+  #DATA(BINARY) intercell_flow_obs1.bsv  
+  #DATA(BINARY) intercell_flow_obs2.bsv  
+  #DATA(BINARY) intercell_flows.bsv      
 END OUTPUT_FILES
-
-
-

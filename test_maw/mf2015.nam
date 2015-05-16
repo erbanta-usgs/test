@@ -6,8 +6,8 @@ BEGIN TIMING
 END TIMING
 
 BEGIN MODELS
-  #modeltype   namefile       modelname
-   GWF         test4tas.nam   GWF_1
+  #modeltype      namefile     modelname
+         GWF    test_maw.nam    GWF_1
 END MODELS
 
 BEGIN EXCHANGES
