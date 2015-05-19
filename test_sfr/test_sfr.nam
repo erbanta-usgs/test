@@ -1,0 +1,20 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN INPUT_FILES
+  IC8           test_sfr.ic 
+  NPF8          test_sfr.npf
+  STO8          test_sfr.sto
+  OC8           test_sfr.oc 
+  DIS8          test_sfr.dis
+  WEL8          test_sfr.wel
+  EVT8          test_sfr.evt
+  RCH8          test_sfr.rch
+  GHB8          test_sfr.ghb
+  SFR8          test_sfr.sfr
+END INPUT_FILES
+
+BEGIN OUTPUT_FILES
+  LIST          test_sfr.lst
+  DATA(BINARY)  test_sfr.hds
+END OUTPUT_FILES
