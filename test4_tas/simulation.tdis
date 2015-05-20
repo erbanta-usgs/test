@@ -7,15 +7,15 @@ BEGIN DIMENSIONS
 END DIMENSIONS
 
 BEGIN STRESS_PERIODS
-# perlen nstp tsmult ss/tr
-    1.0    1    1.0    SS
-   31.0   31    1.0    TR  (Jan)
-   28.0   28    1.0    TR  (Feb)
-   31.0   31    1.0    TR  (Mar)
-   30.0   30    1.0    TR  (Apr)
-   31.0   31    1.0    TR  (May)
-  183.0  183    1.0    TR  (Jun-Nov)
-   31.0   31    1.0    TR  (Dec)
+# perlen nstp tsmult ss/tr           SP    time span
+    1.0    1    1.0    SS             1      0 -   1
+   31.0   31    1.0    TR  (Jan)      2      1 -  32
+   28.0   28    1.0    TR  (Feb)      3     32 -  60
+   31.0   31    1.0    TR  (Mar)      4     60 -  91
+   30.0   30    1.0    TR  (Apr)      5     91 - 121
+   31.0   31    1.0    TR  (May)      6    121 - 152
+  183.0  183    1.0    TR  (Jun-Nov)  7    152 - 335
+   31.0   31    1.0    TR  (Dec)      8    335 - 366
 # totals
 # 366.0  366
 END STRESS_PERIODS

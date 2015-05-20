@@ -7,10 +7,6 @@ BEGIN OPTIONS
   PACKAGENAME 'ET Segs'
   nseg 3
   TimeArraySeriesFile EtsArraySeries.tas
-  # Need to allow for multiple TimeArraySeriesFile entries
-  # to allow for use of multiple time series for one array,
-  # (e.g. rate, different stress periods) or for different
-  # arrays (e.g. rate, depth)
 END OPTIONS
 
 begin dimensions
