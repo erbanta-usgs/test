@@ -38,22 +38,4 @@ end period
 
 BEGIN PERIOD 2
   rate TimeArraySeries EtRateSeries    
-end period    
-
-#BEGIN PERIOD 2
-#  NLARRAY
-#    CONSTANT 1
-#  surface
-#    constant 140.0
-#  rate TimeArraySeries EtRateSeries    
-#  depth
-#    constant 10.0
-#  pxdp
-#    constant 0.2
-#  petm
-#    constant 0.3
-#  pxdp
-#    constant 0.5
-#  petm
-#    constant 0.1
-#end period    
+end period

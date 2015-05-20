@@ -41,8 +41,8 @@ BEGIN OUTPUT_FILES
   DATA intercell_flow_obs1.csv       
   DATA intercell_flow_obs2.csv       
   DATA intercell_flows.csv           
-  DATA chd_flows.csv                 
-  DATA chd_obs.csv                   
+  #DATA chd_flows.csv                 
+  #DATA chd_obs.csv                   
   #DATA(BINARY) ghb_flows.bsv            
   #DATA(BINARY) head_hydrographs.bsv     
   #DATA(BINARY) riv_flows.bsv            
