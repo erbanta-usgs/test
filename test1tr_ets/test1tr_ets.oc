@@ -6,10 +6,6 @@ PERIOD   1 STEP   1
     PRINT BUDGET
     PRINT HEAD
     SAVE BUDGET
-PERIOD   1 STEP   5
-    PRINT BUDGET
-    PRINT HEAD
-    SAVE BUDGET                   
 PERIOD   2 STEP   5
     PRINT BUDGET
     PRINT HEAD
@@ -17,11 +13,14 @@ PERIOD   2 STEP   5
 PERIOD   3 STEP   5
     PRINT BUDGET
     PRINT HEAD
-    SAVE BUDGET           
+    SAVE BUDGET
+    print drawdown
 PERIOD   4 STEP   5
     PRINT BUDGET
     PRINT HEAD
     SAVE BUDGET          
+period   5 step 1
+    print budget
 PERIOD   5 STEP   5
     PRINT BUDGET
     PRINT HEAD
