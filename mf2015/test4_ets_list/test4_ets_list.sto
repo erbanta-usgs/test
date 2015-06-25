@@ -3,7 +3,7 @@ begin options
   #STORAGECOEFFICIENT uncomment if SS is entered as storage coefficient
 end options
 #
-begin period 2
+begin stodata
   #iconvert(nodes) is 0:confined, 1:convertible
   iconvert
     constant 1
@@ -13,5 +13,5 @@ begin period 2
   #sy(nodes) specific yield
   sy
     constant 0.2
-end period
+end stodata
 

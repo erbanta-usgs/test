@@ -1,7 +1,8 @@
 # The ATTRIBUTES block is required.
 BEGIN ATTRIBUTES
-  NAME et_rate 
-  METHOD linear
+  NAME    et_rate 
+  METHOD  linear
+  SFAC    0.9
 END ATTRIBUTES
 0.0    2.0e-2
 1.0    1.5e-2

@@ -5,12 +5,12 @@ BEGIN OPTIONS
   PRINT_FLOWS
   SAVE_FLOWS
   PACKAGENAME 'ET Segs'
-  nseg 3
   TimeArraySeriesFile EtsArraySeries.tas
 END OPTIONS
 
 begin dimensions
   MAXBOUND 150
+  nseg 3
 end dimensions
 
 BEGIN PERIOD 1

@@ -6,16 +6,14 @@ begin nonlinear
 	outer_hclose 1.e-4
 	outer_maximum 100 
 	under_relaxation none
-	linear_solver pcgu
 end nonlinear
 
-begin pcgu
+begin linear
 	inner_hclose 1.0e-4
 	inner_rclose 0.001
 	inner_maximum 100
 	linear_acceleration cg
-	preconditioner milu0
 	scaling_method none
 	REORDERING_METHOD none
 	relaxation_factor 0.97
-end pcgu
+end linear

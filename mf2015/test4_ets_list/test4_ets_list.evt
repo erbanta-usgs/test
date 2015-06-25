@@ -6,14 +6,13 @@ BEGIN OPTIONS
   PACKAGENAME 'ET Segs'
   READASLIST READMULTIPLIER
   BoundNames
-  NSEG 3
   TIMESERIESFILE max_et_rate.ts
-  SFAC_TIMESERIES 0.9
   HIGHEST_ACTIVE
 END OPTIONS
 
 begin dimensions
   MAXBOUND 20
+  NSEG 3
 #  autodetect
 end dimensions
 

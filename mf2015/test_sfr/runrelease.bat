@@ -1,2 +1,2 @@
-..\..\bin\mf2015.exe
+..\..\..\bin\mf2015.exe
 pause
