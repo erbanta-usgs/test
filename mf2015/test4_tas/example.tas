@@ -1,0 +1,22 @@
+# Example time-array series for a structured
+# model with NROW=3 and NCOL=5.
+BEGIN ATTRIBUTES
+  NAME    RchArraySeries_1
+  METHOD  Stepwise
+  SFAC    1.0E-3
+END ATTRIBUTES
+0.0
+CONSTANT  2.0
+60.0
+INTERNAL  1.0  (FREE)  0
+2.0 2.0 2.0 2.3 2.2
+2.0 2.0 2.2 2.6 2.4
+2.0 2.0 2.1 2.5 2.4
+120.0
+CONSTANT  1.8
+180
+CONSTANT  1.7
+240.0
+CONSTANT  1.6
+300.0
+CONSTANT  1.8
