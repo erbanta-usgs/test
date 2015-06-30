@@ -1,0 +1,7 @@
+begin options
+end options
+
+begin icdata
+  strt structured
+    CONSTANT   110.0  Initial Head layer   1
+end icdata

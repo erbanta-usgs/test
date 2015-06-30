@@ -1,0 +1,11 @@
+begin options
+end options
+#
+begin npfdata
+  icelltype structured
+    constant 0
+  hk structured
+    constant 2.0
+  vk
+    constant 0.01
+end npfdata

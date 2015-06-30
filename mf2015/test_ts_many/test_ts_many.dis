@@ -1,0 +1,20 @@
+BEGIN OPTIONS
+
+END OPTIONS
+
+BEGIN DIMENSIONS
+  NLAY 1
+  NROW 10000
+  NCOL 10
+END DIMENSIONS
+
+BEGIN disdata
+  delr
+    CONSTANT   500.0  DELR
+  delc
+    CONSTANT    10.0  DELC
+  top
+    CONSTANT   150.0  TOP of system          
+  botm structured
+   CONSTANT    50.0   Layer BOTM layer   1
+end disdata

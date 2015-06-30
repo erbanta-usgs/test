@@ -1,0 +1,28 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN INPUT_FILES
+  IC8   test_ts_many.ic    
+  NPF8  test_ts_many.npf     
+  CHD8  test_ts_many.chd     
+  RIV8  test_ts_many.riv     
+  RCH8  test_ts_many.rch     
+  OC8   test_ts_many.oc      
+  DIS8  test_ts_many.dis     
+  STO8  test_ts_many.sto     
+  OBS8  test_ts_many.obs     
+END INPUT_FILES
+
+BEGIN OUTPUT_FILES
+  LIST  test_ts_many.lst    
+  #
+  # Output DATA and DATA(BINARY) files
+  DATA(BINARY)  test_ts_many.hds
+  DATA(BINARY)  test_ts_many.cbc
+  DATA          ibound.out
+  #
+  # Output: continuous observations
+  DATA head_hydrographs.csv  
+END OUTPUT_FILES
+
+
