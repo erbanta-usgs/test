@@ -1,0 +1,17 @@
+# RCH8 input file, prepared by mf5to15 on 4/17/2015 at 17:29:21.
+
+BEGIN Options
+  SAVE_FLOWS
+  HIGHEST_ACTIVE
+END Options
+
+BEGIN Dimensions
+  MAXBOUND  150
+END Dimensions
+
+BEGIN PERIOD 1
+  NLARRAY
+    CONSTANT  1
+  RECHARGE
+    CONSTANT   0.40000000E-02
+END PERIOD

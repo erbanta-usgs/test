@@ -1,0 +1,13 @@
+# IC8 input file, prepared by mf5to15 on 4/17/2015 at 17:29:21.
+
+BEGIN Options
+END Options
+
+BEGIN IcData
+  STRT structured
+    CONSTANT    140.000000        Initial head for layer 1
+    CONSTANT    140.000000        Initial head for layer 1
+    CONSTANT    140.000000        Initial head for layer 3
+    CONSTANT    140.000000        Initial head for layer 3
+    CONSTANT    140.000000        Initial head for layer 5
+END IcData

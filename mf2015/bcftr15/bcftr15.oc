@@ -1,0 +1,10 @@
+# OC8 input file, prepared by mf5to15 on 4/17/2015 at 17:29:21.
+
+BEGIN Options
+  HEAD PRINT FORMAT COLUMNS  20  WIDTH  7  DIGITS  3  FIXED WRAP          
+END Options
+
+begin period 1
+  head print all
+  budget print all
+end period

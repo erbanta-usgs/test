@@ -1,0 +1,384 @@
+              Mf5to15 - Converter for MODFLOW-2005 to MODFLOW-2015
+                               Conversion Report
+
+MODFLOW-2005 name file: bcftr.nam
+MODFLOW-2015 base-name: bcftr15
+
+ OPENED bcftr15.tdis
+ FILE TYPE:TDIS8          UNIT 1000   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ OPENED bcftr15.dis
+ FILE TYPE:DIS8           UNIT 1001   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ OPENED bcftr15.ic
+ FILE TYPE:IC8            UNIT 1002   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ OPENED bcftr15.npf
+ FILE TYPE:NPF8           UNIT 1003   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ OPENING bcftr.ba6
+ FILE TYPE:BAS6   UNIT    8   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.bc6
+ FILE TYPE:BCF6   UNIT   11   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.wel
+ FILE TYPE:WEL   UNIT   12   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.riv
+ FILE TYPE:RIV   UNIT   14   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.rch
+ FILE TYPE:RCH   UNIT   18   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.pcg
+ FILE TYPE:PCG   UNIT   19   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.oc
+ FILE TYPE:OC   UNIT   20   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING bcftr.dis
+ FILE TYPE:DIS   UNIT   10   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ BAS -- BASIC PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT    8
+ 
+ MF5TO15 was compiled using uniform precision
+ Precision of REAL and DOUBLE PRECISION variables:          15
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT   10
+    3 LAYERS        10 ROWS        15 COLUMNS
+    2 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS FEET
+  Confining bed flag for each layer:
+   1   1   0
+
+                     DELR =   500.000    
+
+                     DELC =   500.000    
+
+ TOP ELEVATION OF LAYER 1 =   152.000    
+
+   MODEL LAYER BOTTOM EL. =   100.000     FOR LAYER   1
+
+ BOT. EL. OF QUASI-3D BED =   51.0000     FOR LAYER   1
+
+   MODEL LAYER BOTTOM EL. =   0.00000     FOR LAYER   2
+
+ BOT. EL. OF QUASI-3D BED =  -10.0000     FOR LAYER   2
+
+
+
+             MODEL LAYER BOTTOM EL. FOR LAYER   3
+ READING ON UNIT   10 WITH FORMAT: (FREE)              
+
+           1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+ ...........................................................................................................................
+   1   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -49.00  -51.00
+   2   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   3   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   4   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   5   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   6   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   7   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   8   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+   9   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+  10   -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00  -50.00
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ OPENED bcftr15.sto
+ FILE TYPE:STO8   UNIT 1004   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+        2         365.0000         30                    1.100         TR
+
+ COMBINED STEADY-STATE AND TRANSIENT SIMULATION
+
+
+
+ 
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   1
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+        1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+ ................................................................
+   1    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+   2    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+   3    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+   4    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+   5    1   1   1   1   1   1   1   1   1   1   1   1   1   1  -1
+   6    1   1   1   1   1   1   1   1   1   1   1   1   1  -1  -1
+   7    1   1   1   1   1   1   1   1   1   1   1   1   1  -1  -1
+   8    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+   9    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+  10    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+           BOUNDARY ARRAY =              1 FOR LAYER   2
+
+           BOUNDARY ARRAY =              1 FOR LAYER   3
+
+ AQUIFER HEAD WILL BE SET TO   888.88     AT ALL NO-FLOW NODES (IBOUND=0).
+
+             INITIAL HEAD =   140.000     FOR LAYER   1
+
+             INITIAL HEAD =   140.000     FOR LAYER   2
+
+             INITIAL HEAD =   140.000     FOR LAYER   3
+
+ OPENED bcftr15_constant.chd
+ FILE TYPE:CHD8   UNIT 1005   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+5 CHD nodes have been defined from IBOUND and starting heads
+
+ OPENED bcftr15.oc
+ FILE TYPE:OC8            UNIT 1006   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ HEAD PRINT FORMAT CODE IS   8    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT    0    DRAWDOWNS WILL BE SAVED ON UNIT    0
+
+ BCF -- BLOCK-CENTERED FLOW PACKAGE, VERSION 7, 5/2/2005
+         INPUT READ FROM UNIT 11
+ TRANSIENT SIMULATION
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT 30
+ HEAD AT CELLS THAT CONVERT TO DRY=   777.77    
+ WETTING CAPABILITY IS ACTIVE
+ WETTING FACTOR=   1.00000     WETTING ITERATION INTERVAL=   1
+ FLAG THAT SPECIFIES THE EQUATION TO USE FOR HEAD AT WETTED CELLS=   0
+      LAYER  LAYER-TYPE CODE     INTERBLOCK T
+      --------------------------------------------
+         1            1          0 -- HARMONIC    
+         2            3          0 -- HARMONIC    
+         3            0          0 -- HARMONIC    
+
+ COLUMN TO ROW ANISOTROPY =   1.00000    
+
+     PRIMARY STORAGE COEF =  0.300000     FOR LAYER   1
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   1
+
+ VERT HYD COND /THICKNESS =  1.000000E-03 FOR LAYER   1
+
+
+
+                   WETDRY PARAMETER FOR LAYER   1
+ READING ON UNIT   11 WITH FORMAT: (10F13.0)           
+
+         1     2     3     4     5     6     7     8     9    10    11    12    13    14    15
+ .............................................................................................
+   1     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   2     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   3     2.    2.    2.   -2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   4     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   5     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   6     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   7     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   8     2.    2.    2.   -2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+   9     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+  10     2.    2.    2.    2.    2.    2.    2.    2.   -2.   -2.   -2.   -2.   -2.   -2.   -2.
+
+     PRIMARY STORAGE COEF =  5.000000E-05 FOR LAYER   2
+
+    HYD. COND. ALONG ROWS =   5.00000     FOR LAYER   2
+
+ VERT HYD COND /THICKNESS =  2.000000E-03 FOR LAYER   2
+
+   SECONDARY STORAGE COEF =  0.250000     FOR LAYER   2
+
+         WETDRY PARAMETER =   2.00000     FOR LAYER   2
+
+     PRIMARY STORAGE COEF =  4.000000E-05 FOR LAYER   3
+
+     TRANSMIS. ALONG ROWS =   500.000     FOR LAYER   3
+
+ PCG -- CONJUGATE-GRADIENT SOLUTION PACKAGE, VERSION 7, 5/2/2005
+ MAXIMUM OF     40 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     20 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ MATRIX PRECONDITIONING TYPE :    1
+
+
+
+                                    SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+                                   -------------------------------------------
+                    MAXIMUM NUMBER OF CALLS TO PCG ROUTINE =       40
+                        MAXIMUM ITERATIONS PER CALL TO PCG =       20
+                               MATRIX PRECONDITIONING TYPE =        1
+        RELAXATION FACTOR (ONLY USED WITH PRECOND. TYPE 1) =    0.10000E+01
+ PARAMETER OF POLYNOMIAL PRECOND. = 2 (2) OR IS CALCULATED :        2
+                         HEAD CHANGE CRITERION FOR CLOSURE =    0.10000E-02
+                     RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+04
+            PCG HEAD AND RESIDUAL CHANGE PRINTOUT INTERVAL =        1
+     PRINTING FROM SOLVER IS LIMITED(1) OR SUPPRESSED (>1) =        1
+                            STEADY-STATE DAMPING PARAMETER =    0.10000E+01
+                               TRANSIENT DAMPING PARAMETER =    0.10000E+01
+
+ OPENED bcftr15.wel
+ FILE TYPE:WEL8           UNIT 1007   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ WEL -- WELL PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   12
+ No named parameters
+ MAXIMUM OF      2 ACTIVE WELLS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   30
+
+
+     0 Well parameters
+
+ OPENED bcftr15.riv
+ FILE TYPE:RIV8           UNIT 1008   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ RIV -- RIVER PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   14
+ No named parameters
+ MAXIMUM OF     10 ACTIVE RIVER REACHES AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   30
+
+
+     0 River parameters
+
+ OPENED bcftr15.rch
+ FILE TYPE:RCH8           UNIT 1009   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+ RCH -- RECHARGE PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   18
+ No named parameters
+ OPTION 3 -- RECHARGE TO HIGHEST ACTIVE NODE IN EACH VERTICAL COLUMN
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   30
+
+
+     0 Recharge parameters
+
+Processing WEL package for stress period 1
+
+      0 WELLS
+
+Processing WEL package for stress period 2
+
+ WELL NO.  LAYER   ROW   COL   STRESS RATE         
+ --------------------------------------------------
+      1      2      3      4     -0.3500E+05
+      2      2      8      4     -0.3500E+05
+
+      2 WELLS
+
+Processing RIV package for stress period 1
+
+ REACH NO.  LAYER   ROW   COL     STAGE      CONDUCTANCE     BOTTOM EL.         
+ -------------------------------------------------------------------------------
+      1      1      1      1       130.0          0.1000E+05       120.0    
+      2      1      2      1       130.0          0.1000E+05       120.0    
+      3      1      3      1       130.0          0.1000E+05       120.0    
+      4      1      4      1       130.0          0.1000E+05       120.0    
+      5      1      5      1       130.0          0.1000E+05       120.0    
+      6      1      6      1       130.0          0.1000E+05       120.0    
+      7      1      7      1       130.0          0.1000E+05       120.0    
+      8      1      8      1       130.0          0.1000E+05       120.0    
+      9      1      9      1       130.0          0.1000E+05       120.0    
+     10      1     10      1       130.0          0.1000E+05       120.0    
+
+     10 RIVER REACHES
+
+Processing RIV package for stress period 2
+
+ REUSING NON-PARAMETER RIVER REACHES FROM LAST STRESS PERIOD
+
+     10 RIVER REACHES
+
+Processing RCH package for stress period 1
+
+                 RECHARGE =  4.000000E-03
+
+Processing RCH package for stress period 2
+
+ REUSING RECH FROM LAST STRESS PERIOD
+
+ OPENED bcftr15.sms
+ FILE TYPE:SMS8   UNIT 1010   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+
+NOTES:
+ 1. MODFLOW-2015 does not support quasi-3D confining units. Mf5to15 generates 
+   an active layer to replace each quasi-3D confining unit, and default 
+   values are provided for hydraulic properties of the new layers. These 
+   values may need to be adjusted by the modeler to approximate the original 
+   model.
+ 2. Starting head for MODFLOW-2015 model layer 2, which replaces a quasi-3D 
+   unit, has been assigned equal to starting head for layer 1 of original 
+   model.
+ 3. Starting head for MODFLOW-2015 model layer 4, which replaces a quasi-3D 
+   unit, has been assigned equal to starting head for layer 2 of original 
+   model.
+ 4. In NPF, storage changes under unconfined conditions account for both 
+   specific yield and specific storage. As a consequence, numerical results 
+   of MODFLOW-2015 may differ from the results of MODFLOW-2005.
+ 5. Specific storage (SS) has been assigned  as zero for layer 1 of the 
+   MODFLOW-2015 model because LAYCON equals 1 in the MODFLOW-2005 model.
+ 6. Original quasi-3D unit below layer 1 is now layer 2 and has been assigned 
+   HK value:  0.283E-07
+ 7. Original quasi-3D unit below layer 2 is now layer 4 and has been assigned 
+   HK value:  0.283E-07
+ 8. VK values that are equivalent to specified Vcont values have been 
+   assigned.  However, these values may or may not be reasonable.
+ 9. Original quasi-3D unit below layer 1 is now layer 2 and has been assigned 
+   SS value:   0.00
+ 10. Original quasi-3D unit below layer 2 is now layer 4 and has been 
+   assigned SS value:   0.00
+ 11. Original quasi-3D unit below layer 1 is now layer 2 and has been 
+   assigned SY value:   0.00
+ 12. Original quasi-3D unit below layer 2 is now layer 4 and has been 
+   assigned SY value:   0.00
+ 13. Idomain for MODFLOW-2015 model layer 2, which replaces a quasi-3D unit, 
+   has been assigned equal to Ibound for layer 1 of original model.
+ 14. Idomain for MODFLOW-2015 model layer 4, which replaces a quasi-3D unit, 
+   has been assigned equal to Ibound for layer 2 of original model.
+
+WARNINGS:
+ Conversion of BCF is non-unique when NLAY > 1. Numeric values are provided 
+   in MODFLOW-2015 input, but some of those values may need to be reviewed. 
+   See notes above for details.
+
+ New name file is "bcftr15.nam"
+ Program terminated normally, but see warning(s) above.

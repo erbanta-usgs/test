@@ -1,0 +1,20 @@
+BEGIN Options
+END Options
+
+BEGIN Input_Files
+  DIS8          bcftr15.dis
+  IC8           bcftr15.ic
+  NPF8          bcftr15.npf
+  STO8          bcftr15.sto
+  CHD8          bcftr15_constant.chd
+  OC8           bcftr15.oc
+  WEL8          bcftr15.wel
+  RIV8          bcftr15.riv
+  RCH8          bcftr15.rch
+END Input_Files
+
+BEGIN Output_Files
+  LIST          bcftr15.lst
+  DATA(BINARY)  bcftr15_bcftr.cbc
+  DATA(BINARY)  bcftr15_bcftr.hds
+END Output_Files

@@ -1,0 +1,16 @@
+begin options
+  precision single
+  digits 10
+  structured
+  print_input
+  external single_head.obs
+  external single_riv.obs
+  external single_ghb.obs
+  external single_intercell.obs
+  external single_chd.obs
+  external continuous_head.obs
+  external continuous_riv.obs
+  external continuous_ghb.obs
+  external continuous_intercell.obs
+  external continuous_chd.obs
+end options

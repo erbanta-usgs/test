@@ -1,0 +1,34 @@
+# STO8 input file, prepared by mf5to15 on 4/20/2015 at 12:57:13.
+
+BEGIN Options
+  STORAGECOEFFICIENT
+END Options
+
+BEGIN StoData
+  ICONVERT structured
+    CONSTANT  0
+    CONSTANT  0
+    CONSTANT  1
+    CONSTANT  0
+    CONSTANT  0
+  SS structured
+    CONSTANT    0.0000000    
+    CONSTANT    0.00    
+    CONSTANT   0.50000000E-04
+    CONSTANT    0.00    
+    CONSTANT   0.40000000E-04
+  SY structured
+    CONSTANT   0.30000000    
+    CONSTANT    0.00    
+    CONSTANT   0.25000000    
+    CONSTANT    0.00    
+    CONSTANT    0.0000000    
+END StoData
+
+BEGIN Period 1
+    STEADY-STATE
+END Period
+
+BEGIN Period 2
+    TRANSIENT
+END Period

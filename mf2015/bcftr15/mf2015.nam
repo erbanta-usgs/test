@@ -1,0 +1,17 @@
+# Simulation name file for MODFLOW-2015 prepared by Mf5to15
+
+BEGIN Options
+END Options
+
+BEGIN Timing
+  TDIS  bcftr15.tdis
+END Timing
+
+BEGIN Models
+  GWF  bcftr15.nam  bcftr15
+END Models
+
+BEGIN Solution_Group 1
+  MXITER  1
+  NUMERICAL  bcftr15.sms  bcftr15
+END Solution_Group

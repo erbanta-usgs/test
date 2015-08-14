@@ -1,0 +1,3 @@
+@echo off
+echo Running MF2015...
+..\..\..\bin\mf2015d.exe

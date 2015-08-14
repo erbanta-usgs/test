@@ -1,0 +1,21 @@
+# Options block
+begin options
+  packagename 'GHB Lakes' (16 character limit)
+  PRINT_INPUT
+  PRINT_FLOWS
+  BOUNDNAMES
+end options
+
+# Dimensions block
+begin dimensions
+  maxbound 3
+  
+end dimensions
+
+# Stress-period block(s)
+begin period 1
+  1  3  1  100.0  15000.
+  1  7  1  110.0  14000.  ghb2_upper
+  1  7  1   85.0   5000.  ghb2_lower
+end period
+  

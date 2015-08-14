@@ -1,0 +1,14 @@
+# WEL8 input file, prepared by mf5to15 on 4/17/2015 at 17:29:21.
+
+BEGIN Options
+  SAVE_FLOWS
+END Options
+
+BEGIN Dimensions
+  MAXBOUND  2
+END Dimensions
+
+BEGIN PERIOD 2
+   3  3  4   -35000.000
+   3  8  4   -35000.000
+END PERIOD

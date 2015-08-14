@@ -1,0 +1,4 @@
+begin continuous chd_flows.csv
+  chdf_chd_gp      chd-flow    chd_gp  # constant-head flow
+  chdc_1_4_1       chd-flow    1  4  1 
+end continuous

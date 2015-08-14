@@ -1,0 +1,900 @@
+
+ OPENED mf2015.nam
+ FILE TYPE:NAM   UNIT 1001   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+                                  MODFLOW-2015
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                              SIMULATION LIST FILE
+ # Simulation name file for MODFLOW-2015 prepared by Mf5to15
+
+ READING SIMULATION OPTIONS
+ END OF SIMULATION OPTIONS
+
+ READING SIMULATION TIMING
+
+ OPENED bcftr15.tdis
+ FILE TYPE:TDIS   UNIT 1002   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
+ VERSION 1 : 11/13/2014 - INPUT READ FROM UNIT 1002
+ # TDIS8 input file, prepared by mf5to15 on 4/17/2015 at 17:29:21.
+ PROCESSING TDIS OPTIONS
+    MODEL TIME UNIT IS DAYS
+ END OF TDIS OPTIONS
+ PROCESSING TDIS DIMENSIONS
+    2 STRESS PERIOD(S) IN SIMULATION
+ END OF TDIS DIMENSIONS
+ PROCESSING TDIS STRESS_PERIODS
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000
+        2         365.0000         30                    1.100
+ END OF TDIS STRESS_PERIODS
+ END OF SIMULATION TIMING
+
+ READING SIMULATION MODELS
+ END OF SIMULATION MODELS
+
+ READING SOLUTION_GROUP
+
+ Creating solution: SLN_1               
+
+ OPENED bcftr15.sms
+ FILE TYPE:SMS   UNIT 1003   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ END OF SIMULATION SOLUTION_GROUP
+
+ SMS -- SPARSE MATRIX SOLVER PACKAGE, VERSION 8, 5/2/2005
+         INPUT READ FROM UNIT 1003
+ # SMS8 input file, prepared by mf5to15 on 4/17/2015 at 17:29:21.
+
+ PROCESSING SMS OPTIONS
+ SIMPLE OPTION:
+ DEFAULT SOLVER INPUT VALUES FOR FAST SOLUTIONS
+ END OF SMS OPTIONS
+
+ PROCESSING SMS NONLINEAR
+ END OF SMS NONLINEAR DATA
+ OUTER ITERATION CONVERGENCE CRITERION (HCLOSE) =    0.100000E-02
+ MAXIMUM NUMBER OF OUTER ITERATIONS (MXITER)     =        40
+ SOLVER PRINTOUT INDEX             (IPRSMS)      =         2
+ NONLINEAR ITERATION METHOD    (NONLINMETH)      =         0
+ LINEAR SOLUTION METHOD           (LINMETH)      =         2
+ ***PICARD LINEARIZATION WILL BE USED***
+ 
+ ***PCGU LINEAR SOLVER WILL BE USED***
+
+ PCGU -- UNSTRUCTURED CONJUGATE-GRADIENT SOLUTION PACKAGE, VERSION 8.02, 08/13/2013
+
+ PROCESSING PCGU DATA
+ END OF PCGU
+
+              SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF     40 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     20 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = CG        
+ MATRIX PRECONDITIONING TYPE           = JACOBI              
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-03
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+04
+ RESIDUAL CONVERGENCE OPTION           =        0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.00000E+00
+  ONLY USED WITH MILU0 PRECONDITIONER
+
+
+ 
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20                31.699                    10           GWF-node number
+        2               20                6.1683                   649           GWF-node number
+        3               20               0.90144                   146           GWF-node number
+        4               20               0.28497                   471           GWF-node number
+        5               20               0.11546                   300           GWF-node number
+        6               20               0.42226E-01               456           GWF-node number
+        7               20               0.15525E-01               448           GWF-node number
+        8               20               0.61787E-02               306           GWF-node number
+        9               18               0.20981E-02               600           GWF-node number
+       10                1               0.32376E-04               185           GWF-node number
+
+
+    10 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   1
+   179 TOTAL ITERATIONS
+
+ TOTAL OF      10OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+    31.699    ,         10   6.1683    ,        649  0.90144    ,        146  0.28497    ,        471  0.11546    ,        300
+   0.42226E-01,        456  0.15525E-01,        448  0.61787E-02,        306  0.20981E-02,        600  0.32376E-04,        185
+1
+                            STRESS PERIOD NO.    2, LENGTH =   365.0000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =    30
+
+                               MULTIPLIER FOR DELT =     1.100
+
+                            INITIAL TIME STEP SIZE =   2.218926    
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20               -36.837                   409           GWF-node number
+        2               20               -5.1500                   463           GWF-node number
+        3               20               -1.6220                   334           GWF-node number
+        4               20              -0.39896                   465           GWF-node number
+        5               20              -0.10673                   334           GWF-node number
+        6               20              -0.28773E-01               615           GWF-node number
+        7               20              -0.98829E-02                 5           GWF-node number
+        8               20              -0.24180E-02               750           GWF-node number
+        9                1              -0.41580E-04               109           GWF-node number
+
+
+     9 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   1 STRESS PERIOD   2
+   161 TOTAL ITERATIONS
+
+ TOTAL OF       9OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -36.837    ,        409  -5.1500    ,        463  -1.6220    ,        334 -0.39896    ,        465 -0.10673    ,        334
+  -0.28773E-01,        615 -0.98829E-02,          5 -0.24180E-02,        750 -0.41580E-04,        109
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20               -2.9397                   667           GWF-node number
+        2               20              -0.31868                   465           GWF-node number
+        3               20               0.40060E-01               110           GWF-node number
+        4               20              -0.72530E-02               738           GWF-node number
+        5               20               0.22007E-02               275           GWF-node number
+        6                2               0.21081E-03               109           GWF-node number
+
+
+     6 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   2 STRESS PERIOD   2
+   102 TOTAL ITERATIONS
+
+ TOTAL OF       6OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+   -2.9397    ,        667 -0.31868    ,        465  0.40060E-01,        110 -0.72530E-02,        738  0.22007E-02,        275
+   0.21081E-03,        109
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20              -0.62798                   608           GWF-node number
+        2               20               0.54484E-01                82           GWF-node number
+        3               20               0.20938E-01               465           GWF-node number
+        4               20              -0.26401E-02               615           GWF-node number
+        5                2               0.20241E-03               109           GWF-node number
+
+
+     5 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   3 STRESS PERIOD   2
+    82 TOTAL ITERATIONS
+
+ TOTAL OF       5OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.62798    ,        608  0.54484E-01,         82  0.20938E-01,        465 -0.26401E-02,        615  0.20241E-03,        109
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20              -0.12667                   609           GWF-node number
+        2               20               0.10485E-01                82           GWF-node number
+        3               20               0.35659E-02               465           GWF-node number
+        4                1               0.38155E-04               148           GWF-node number
+
+
+     4 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   4 STRESS PERIOD   2
+    61 TOTAL ITERATIONS
+
+ TOTAL OF       4OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.12667    ,        609  0.10485E-01,         82  0.35659E-02,        465  0.38155E-04,        148
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1               20              -0.23606E-01               609           GWF-node number
+        2               10              -0.14771E-02               109           GWF-node number
+        3                1              -0.46746E-04                34           GWF-node number
+
+
+     3 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   5 STRESS PERIOD   2
+    31 TOTAL ITERATIONS
+
+ TOTAL OF       3OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.23606E-01,        609 -0.14771E-02,        109 -0.46746E-04,         34
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.67167E-04               307           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   6 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.67167E-04,        307
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.74130E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   7 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.74130E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.59761E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   8 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.59761E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.63850E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP   9 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.63850E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.53873E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  10 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.53873E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.53350E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  11 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.53350E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.47786E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  12 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.47786E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.46520E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  13 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.46520E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.43292E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  14 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.43292E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.42085E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  15 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.42085E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.39966E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  16 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.39966E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.38949E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  17 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.38949E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.37407E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  18 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.37407E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.36567E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  19 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.36567E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.35365E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  20 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.35365E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.34664E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  21 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.34664E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.33689E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  22 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.33689E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.33091E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  23 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.33091E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.32280E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  24 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.32280E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.31758E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  25 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.31758E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.31076E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  26 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.31076E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.30610E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  27 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.30610E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.30032E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  28 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.30032E-04,        607
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.29607E-04               457           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  29 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.29607E-04,        457
+
+PICARD ITERATION:      1
+
+
+ Outer-Iteration  Inner-Iteration    Maximum Head Change  Maximum Head Change
+     Number           Count               Value              Location
+        1                1              -0.29118E-04               607           GWF-node number
+
+
+     1 CALLS TO NUMERICAL SOLUTION  IN TIME STEP  30 STRESS PERIOD   2
+     1 TOTAL ITERATIONS
+
+ TOTAL OF       1OUTER ITERATIONS
+  MAXIMUM CHANGE FOR EACH ITERATION:
+   MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE  MAX. CHANGE        NODE
+ ------------------------------------------------------------------------------------------------------------------------------------
+  -0.29118E-04,        607
+ 
+ SUMMARY OF MEMORY USAGE
+                  ORIGIN                         NAME                TYPE           SIZE    NREALLOC 
+ ----------------------------------------------------------------------------------------------------
+ bcftr15                                     ID              INTEGER                      1         0                                                                                                   
+ bcftr15                                     IOUT            INTEGER                      1         0                                                                                                   
+ bcftr15                                     IDSOLN          INTEGER                      1         0                                                                                                   
+ bcftr15                                     NEQ             INTEGER                      1         0                                                                                                   
+ bcftr15                                     NJA             INTEGER                      1         0                                                                                                   
+ bcftr15                                     IUNSTR          INTEGER                      1         0                                                                                                   
+ bcftr15                                     MOFFSET         INTEGER                      1         0                                                                                                   
+ bcftr15                                     INIC            INTEGER                      1         0                                                                                                   
+ bcftr15                                     INOC            INTEGER                      1         0                                                                                                   
+ bcftr15                                     INNPF           INTEGER                      1         0                                                                                                   
+ bcftr15                                     INBUY           INTEGER                      1         0                                                                                                   
+ bcftr15                                     INSTO           INTEGER                      1         0                                                                                                   
+ bcftr15                                     INHFB           INTEGER                      1         0                                                                                                   
+ bcftr15                                     INGNC           INTEGER                      1         0                                                                                                   
+ bcftr15                                     INSBT           INTEGER                      1         0                                                                                                   
+ bcftr15                                     INTSL           INTEGER                      1         0                                                                                                   
+ bcftr15                                     MSHAPE          INTEGER (3)                  3         0                                                                                                   
+ bcftr15                                     NODEREDUCED     INTEGER (750)              750         0                                                                                                   
+ bcftr15                                     NODEUSER        INTEGER (0)                  0         0                                                                                                   
+ bcftr15                                     TOP             DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     BOT             DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     AREA            DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     IA              INTEGER (751)              751         0                                                                                                   
+ bcftr15                                     JA              INTEGER (4700)            4700         0                                                                                                   
+ bcftr15                                     ISYM            INTEGER (4700)            4700         0                                                                                                   
+ bcftr15                                     JAS             INTEGER (4700)            4700         0                                                                                                   
+ bcftr15                                     FAHL            DOUBLE (1975)             1975         0                                                                                                   
+ bcftr15                                     IHC             INTEGER (1975)            1975         0                                                                                                   
+ bcftr15                                     CL1             DOUBLE (1975)             1975         0                                                                                                   
+ bcftr15                                     CL2             DOUBLE (1975)             1975         0                                                                                                   
+ bcftr15                                     DBUFF           DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     IBUFF           INTEGER (750)              750         0                                                                                                   
+ bcftr15                                     XOLD            DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     FLOWJA          DOUBLE (4700)             4700         0                                                                                                   
+ bcftr15                                     IDXGLO          INTEGER (4700)            4700         0                                                                                                   
+ bcftr15 WEL_1                               ID              INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IBCNUM          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               INUNIT          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IOUT            INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IPACKCB         INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               MAXBOUND        INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               NBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               NCOLBND         INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               KBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               ISCLOC          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               NAUX            INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IPRPAK          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               INEWTON         INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IPRFLOW         INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IFREFM          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               INAMEDBOUND     INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IONPER          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               RIN             DOUBLE                       1         0                                                                                                   
+ bcftr15 WEL_1                               ROUT            DOUBLE                       1         0                                                                                                   
+ bcftr15 WEL_1                               SFACTIMESERIES  DOUBLE                       1         0                                                                                                   
+ bcftr15 WEL_1                               NPAKEQ          INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IOFFSET         INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               IFLOWRED        INTEGER                      1         0                                                                                                   
+ bcftr15 WEL_1                               FLOWRED         DOUBLE                       1         0                                                                                                   
+ bcftr15 RIV_1                               ID              INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IBCNUM          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               INUNIT          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IOUT            INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IPACKCB         INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               MAXBOUND        INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               NBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               NCOLBND         INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               KBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               ISCLOC          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               NAUX            INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IPRPAK          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               INEWTON         INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IPRFLOW         INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IFREFM          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               INAMEDBOUND     INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IONPER          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               RIN             DOUBLE                       1         0                                                                                                   
+ bcftr15 RIV_1                               ROUT            DOUBLE                       1         0                                                                                                   
+ bcftr15 RIV_1                               SFACTIMESERIES  DOUBLE                       1         0                                                                                                   
+ bcftr15 RIV_1                               NPAKEQ          INTEGER                      1         0                                                                                                   
+ bcftr15 RIV_1                               IOFFSET         INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               ID              INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IBCNUM          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               INUNIT          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IOUT            INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IPACKCB         INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               MAXBOUND        INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               NBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               NCOLBND         INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               KBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               ISCLOC          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               NAUX            INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IPRPAK          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               INEWTON         INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IPRFLOW         INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IFREFM          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               INAMEDBOUND     INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IONPER          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               RIN             DOUBLE                       1         0                                                                                                   
+ bcftr15 RCH_1                               ROUT            DOUBLE                       1         0                                                                                                   
+ bcftr15 RCH_1                               SFACTIMESERIES  DOUBLE                       1         0                                                                                                   
+ bcftr15 RCH_1                               NPAKEQ          INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IOFFSET         INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               IHACT           INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               INLARRAY        INTEGER                      1         0                                                                                                   
+ bcftr15 RCH_1                               INOTALLO        INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               ID              INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IBCNUM          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               INUNIT          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IOUT            INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IPACKCB         INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               MAXBOUND        INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               NBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               NCOLBND         INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               KBOUND          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               ISCLOC          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               NAUX            INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IPRPAK          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               INEWTON         INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IPRFLOW         INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IFREFM          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               INAMEDBOUND     INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IONPER          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               RIN             DOUBLE                       1         0                                                                                                   
+ bcftr15 CHD_1                               ROUT            DOUBLE                       1         0                                                                                                   
+ bcftr15 CHD_1                               SFACTIMESERIES  DOUBLE                       1         0                                                                                                   
+ bcftr15 CHD_1                               NPAKEQ          INTEGER                      1         0                                                                                                   
+ bcftr15 CHD_1                               IOFFSET         INTEGER                      1         0                                                                                                   
+ SLN_1                                       IA              INTEGER (751)              751         0                                                                                                   
+ SLN_1                                       X               DOUBLE (750)               750         0                                                                                                   
+ SLN_1                                       RHS             DOUBLE (750)               750         0                                                                                                   
+ SLN_1                                       IACTIVE         INTEGER (750)              750         0                                                                                                   
+ SLN_1                                       XTEMP           DOUBLE (750)               750         0                                                                                                   
+ SLN_1                                       JA              INTEGER (4700)            4700         0                                                                                                   
+ SLN_1                                       AMAT            DOUBLE (4700)             4700         0                                                                                                   
+ bcftr15                                     STRT            DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     INPFCB          INTEGER                      1         0                                                                                                   
+ bcftr15                                     IPRFLOW         INTEGER                      1         0                                                                                                   
+ bcftr15                                     INEWTON         INTEGER                      1         0                                                                                                   
+ bcftr15                                     HNOFLO          DOUBLE                       1         0                                                                                                   
+ bcftr15                                     HDRY            DOUBLE                       1         0                                                                                                   
+ bcftr15                                     ICELLAVG        INTEGER                      1         0                                                                                                   
+ bcftr15                                     IPERCHED        INTEGER                      1         0                                                                                                   
+ bcftr15                                     IVARCV          INTEGER                      1         0                                                                                                   
+ bcftr15                                     IDEWATCV        INTEGER                      1         0                                                                                                   
+ bcftr15                                     ITHICKSTRT      INTEGER                      1         0                                                                                                   
+ bcftr15                                     INWTDAMP        INTEGER                      1         0                                                                                                   
+ bcftr15                                     IREWET          INTEGER                      1         0                                                                                                   
+ bcftr15                                     WETFCT          DOUBLE                       1         0                                                                                                   
+ bcftr15                                     IWETIT          INTEGER                      1         0                                                                                                   
+ bcftr15                                     IHDWET          INTEGER                      1         0                                                                                                   
+ bcftr15                                     MIN_SATTHK      DOUBLE                       1         0                                                                                                   
+ bcftr15                                     ICELLTYPE       INTEGER (750)              750         0                                                                                                   
+ bcftr15                                     HK              DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     VK              DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     SAT             DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     CONDSAT         DOUBLE (1975)             1975         0                                                                                                   
+ bcftr15                                     ICONVERT        INTEGER (750)              750         0                                                                                                   
+ bcftr15                                     SC1             DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     SC2             DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     STRGSS          DOUBLE (750)               750         0                                                                                                   
+ bcftr15                                     STRGSY          DOUBLE (750)               750         0                                                                                                   
+ bcftr15 WEL_1                               NODELIST        INTEGER (2)                  2         0                                                                                                   
+ bcftr15 WEL_1                               BOUND           DOUBLE (1,2)                 2         0                                                                                                   
+ bcftr15 WEL_1                               HCOF            DOUBLE (2)                   2         0                                                                                                   
+ bcftr15 WEL_1                               RHS             DOUBLE (2)                   2         0                                                                                                   
+ bcftr15 WEL_1                               SIMVALS         DOUBLE (2)                   2         0                                                                                                   
+ bcftr15 WEL_1                               AUXVAR          DOUBLE (0,2)                 0         0                                                                                                   
+ bcftr15 RIV_1                               NODELIST        INTEGER (10)                10         0                                                                                                   
+ bcftr15 RIV_1                               BOUND           DOUBLE (3,10)               30         0                                                                                                   
+ bcftr15 RIV_1                               HCOF            DOUBLE (10)                 10         0                                                                                                   
+ bcftr15 RIV_1                               RHS             DOUBLE (10)                 10         0                                                                                                   
+ bcftr15 RIV_1                               SIMVALS         DOUBLE (10)                 10         0                                                                                                   
+ bcftr15 RIV_1                               AUXVAR          DOUBLE (0,10)                0         0                                                                                                   
+ bcftr15 RCH_1                               NODELIST        INTEGER (150)              150         0                                                                                                   
+ bcftr15 RCH_1                               BOUND           DOUBLE (1,150)             150         0                                                                                                   
+ bcftr15 RCH_1                               HCOF            DOUBLE (150)               150         0                                                                                                   
+ bcftr15 RCH_1                               RHS             DOUBLE (150)               150         0                                                                                                   
+ bcftr15 RCH_1                               SIMVALS         DOUBLE (150)               150         0                                                                                                   
+ bcftr15 RCH_1                               AUXVAR          DOUBLE (0,150)               0         0                                                                                                   
+ bcftr15 CHD_1                               NODELIST        INTEGER (5)                  5         0                                                                                                   
+ bcftr15 CHD_1                               BOUND           DOUBLE (2,5)                10         0                                                                                                   
+ bcftr15 CHD_1                               HCOF            DOUBLE (5)                   5         0                                                                                                   
+ bcftr15 CHD_1                               RHS             DOUBLE (5)                   5         0                                                                                                   
+ bcftr15 CHD_1                               SIMVALS         DOUBLE (5)                   5         0                                                                                                   
+ bcftr15 CHD_1                               AUXVAR          DOUBLE (0,5)                 0         0                                                                                                   
+ SLN_1 PCGU                                  DSCALE          DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  DSCALE2         DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  IAPC            INTEGER (2)                  2         0                                                                                                   
+ SLN_1 PCGU                                  JAPC            INTEGER (4700)            4700         0                                                                                                   
+ SLN_1 PCGU                                  APC             DOUBLE (4700)             4700         0                                                                                                   
+ SLN_1 PCGU                                  IW              INTEGER (1)                  1         0                                                                                                   
+ SLN_1 PCGU                                  W               DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  LORDER          INTEGER (1)                  1         0                                                                                                   
+ SLN_1 PCGU                                  IORDER          INTEGER (1)                  1         0                                                                                                   
+ SLN_1 PCGU                                  IARO            INTEGER (2)                  2         0                                                                                                   
+ SLN_1 PCGU                                  JARO            INTEGER (1)                  1         0                                                                                                   
+ SLN_1 PCGU                                  ARO             DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  ID              INTEGER (750)              750         0                                                                                                   
+ SLN_1 PCGU                                  D               DOUBLE (750)               750         0                                                                                                   
+ SLN_1 PCGU                                  P               DOUBLE (750)               750         0                                                                                                   
+ SLN_1 PCGU                                  Q               DOUBLE (750)               750         0                                                                                                   
+ SLN_1 PCGU                                  Z               DOUBLE (750)               750         0                                                                                                   
+ SLN_1 PCGU                                  T               DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  V               DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  DHAT            DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  PHAT            DOUBLE (1)                   1         0                                                                                                   
+ SLN_1 PCGU                                  QHAT            DOUBLE (1)                   1         0                                                                                                   
+ SLN_1                                       HNCG            DOUBLE (40)                 40         0                                                                                                   
+ SLN_1                                       LRCH            INTEGER (3,40)             120         0                                                                                                   
+ 
+ Total size of allocated integer arrays:   36600
+ Total size of allocated double arrays:    37742
+ Size of allocated arrays in megabytes:    0.448336    
+ 
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2015/04/21 13:41:42
+ Elapsed run time:  0.367 Seconds
+
+ Normal termination of simulation.
