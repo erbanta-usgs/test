@@ -1,0 +1,8 @@
+begin single head_obs.csv
+  h1_day1     head   1.0  2  3  6    # head obs at layer 2 row 3 col 6
+  h1_day2     head   2.0  2  3  6    # head obs at layer 2 row 3 col 6
+  h1_day3.0   head   3.0  2  3  6    # head obs at layer 2 row 3 col 6
+  h1_day4.1   head   4.1  2  3  6    # head obs at layer 2 row 3 col 6
+  h1_day5.6   head   5.6  2  3  6    # head obs at layer 2 row 3 col 6
+  h1_day10.8  head  10.8  2  3  6    # head obs at layer 2 row 3 col 6
+end single
