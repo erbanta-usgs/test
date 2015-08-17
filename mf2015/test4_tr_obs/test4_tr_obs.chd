@@ -11,19 +11,19 @@ begin dimensions
 end dimensions
 
 begin period 1
-#L   R   C  shead  ehead  name
- 1   1   1  120.   120.   chd-1
- 1   4   1  120.   120.
- 1   5   1  120.   120.   chd_gp
- 1   6   1  120.   120.   chd_gp
- 1  10   1  120.   120.   chd-10
+#L   R   C  head  name
+ 1   1   1  120.  chd-1
+ 1   4   1  120. 
+ 1   5   1  120.  chd_gp
+ 1   6   1  120.  chd_gp
+ 1  10   1  120.  chd-10
 end period
 
 begin period 2
-#L   R   C  shead  ehead  name
- 1   1   1  120.   120.   chd-1
- 1   4   1  120.   120.
- 1   5   1  120.   120.   chd_gp
- 1   6   1  120.   120.   chd_gp
- 1  10   1  120.   120.   chd-10
+#L   R   C  head  name
+ 1   1   1  120.  chd-1
+ 1   4   1  120. 
+ 1   5   1  120.  chd_gp
+ 1   6   1  120.  chd_gp
+ 1  10   1  120.  chd-10
 end period
