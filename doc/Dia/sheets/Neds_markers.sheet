@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sheet xmlns="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns">
+
+
+<name>Neds_markers</name>
+<name xml:lang="en_CA">Neds_markers</name>
+<name xml:lang="en_GB">Neds_markers</name>
+
+
+<description>Neds Collection of Markers</description>
+<description xml:lang="en_CA">Dots and other Miscellaneous Markers</description>
+<description xml:lang="en_GB">Dots and other Miscellaneous Markers</description>
+
+
+<contents>
+
+
+<object name="Marker - Dot1mm"><description>Dot1mm</description>
+<description xml:lang="en_CA">Resizable dot - default 1 mm</description>
+<description xml:lang="en_GB">Resizable dot - default 1 mm</description></object> 
+
+<object name="Marker - Dot1.5mm"><description>Dot1.5mm</description>
+<description xml:lang="en_CA">Resizable dot - default 1.5 mm</description>
+<description xml:lang="en_GB">Resizable dot - default 1.5 mm</description></object> 
+
+<object name="Marker - Dot2mm"><description>Dot2mm</description>
+<description xml:lang="en_CA">Resizable dot - default 2 mm</description>
+<description xml:lang="en_GB">Resizable dot - default 2 mm</description></object> 
+
+<object name="Marker - Dot3mm"><description>Dot3mm</description>
+<description xml:lang="en_CA">Resizable dot - default 3 mm</description>
+<description xml:lang="en_GB">Resizable dot - default 3 mm</description></object> 
+
+<object name="Marker - Triangle1mm"><description>Triangle1mm</description>
+<description xml:lang="en_CA">Resizable triangle - default 1 mm</description>
+<description xml:lang="en_GB">Resizable triangle - default 1 mm</description></object> 
+
+<object name="Marker - Triangle1.5mm"><description>Triangle1.5mm</description>
+<description xml:lang="en_CA">Resizable triangle - default 1.5 mm</description>
+<description xml:lang="en_GB">Resizable triangle - default 1.5 mm</description></object> 
+
+<object name="Marker - Triangle2mm"><description>Triangle2mm</description>
+<description xml:lang="en_CA">Resizable triangle - default 2 mm</description>
+<description xml:lang="en_GB">Resizable triangle - default 2 mm</description></object> 
+
+<object name="Marker - Triangle3mm"><description>Triangle3mm</description>
+<description xml:lang="en_CA">Resizable triangle - default 3 mm</description>
+<description xml:lang="en_GB">Resizable triangle - default 3 mm</description></object> 
+
+<object name="Marker - Square1mm"><description>Square1mm</description>
+<description xml:lang="en_CA">Resizable square - default 1 mm</description>
+<description xml:lang="en_GB">Resizable square - default 1 mm</description></object> 
+
+<object name="Marker - Square1.5mm"><description>Square1.5mm</description>
+<description xml:lang="en_CA">Resizable square - default 1.5 mm</description>
+<description xml:lang="en_GB">Resizable square - default 1.5 mm</description></object> 
+
+<object name="Marker - Square2mm"><description>Square2mm</description>
+<description xml:lang="en_CA">Resizable square - default 2 mm</description>
+<description xml:lang="en_GB">Resizable square - default 2 mm</description></object> 
+
+<object name="Marker - Square3mm"><description>Square3mm</description>
+<description xml:lang="en_CA">Resizable square - default 3 mm</description>
+<description xml:lang="en_GB">Resizable square - default 3 mm</description></object> 
+
+
+</contents>
+</sheet>

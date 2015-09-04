@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+<!-- Author: Ned Banta, 2015 -->
+  <name>Marker - Square3mm</name>
+  <icon>square.png</icon>
+  <connections>
+    <point x="0.5" y="0.5"/>
+  </connections>
+  <default-width>0.3</default-width>
+  <default-height>0.3</default-height>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:polygon points="0,0 0,1 1,1 1,0" style="stroke: #0000FF; stroke-width: 0; fill: #0000FF"/>
+  </svg:svg>
+</shape>
