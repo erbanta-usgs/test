@@ -1,0 +1,6 @@
+begin continuous riv_flows.csv
+  riv2-1-15      riv 2 1 15
+  riv2-3-15      riv 2 3 15      # sum of flows for all riv cells at lay 2 row 3 col 15
+  riv2-4-15      riv 2 4 15      # sum of flows for all riv cells at lay 2 row 4 col 15
+  riv2-5-15      riv 2 5 15      # sum of flows for all riv cells at lay 2 row 5 col 15
+end continuous

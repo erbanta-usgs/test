@@ -1,0 +1,30 @@
+begin options
+  precision single
+  digits 10
+  structured
+  print_input
+  external test_obs.single_head.obs
+  external test_obs.single_riv.obs
+  external test_obs.single_ghb.obs
+  external test_obs.single_intercell.obs
+  external test_obs.continuous_head.obs
+  external test_obs.continuous_riv.obs
+  external test_obs.continuous_ghb.obs
+  external test_obs.continuous_intercell.obs
+end options
+
+begin single test_obs.chd.csv
+  chdf1.0      chd-flow   1.0   chd_gp  # constant-head flow at chd_gp
+  chdf2.0      chd-flow   2.0   chd_gp  # constant-head flow at chd_gp
+  chdf2.5      chd-flow   2.5   chd_gp  # constant-head flow at chd_gp
+  chdf3.0      chd-flow   3.0   chd_gp  # constant-head flow at chd_gp
+  chdf8.0      chd-flow   8.0   chd_gp  # constant-head flow at chd_gp
+  chdf10.0     chd-flow  10.0   chd_gp  # constant-head flow at chd_gp
+  chdf11.0     chd-flow  11.0   chd_gp  # constant-head flow at chd_gp
+  chd_1_4_1_2  chd-flow   2.0   1  4  1 
+end single
+
+begin continuous test_obs.chd_flows.csv
+  chdf_chd_gp      chd-flow    chd_gp  # constant-head flow
+  chdc_1_4_1       chd-flow    1  4  1 
+end continuous

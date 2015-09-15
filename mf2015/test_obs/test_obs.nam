@@ -1,0 +1,42 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN INPUT_FILES
+  IC8   test_obs.ic
+  NPF8  test_obs.npf
+  WEL8  test_obs.wel
+  RIV8  test_obs.riv
+  RCH8  test_obs.rch
+  OC8   test_obs.oc
+  DIS8  test_obs.dis
+  GHB8  test_obs.ghb
+  STO8  test_obs.sto
+  obs8  test_obs.obs
+  CHD8  test_obs.chd
+END INPUT_FILES
+
+BEGIN OUTPUT_FILES
+  LIST  test_obs.lst
+  #
+  # Output DATA and DATA(BINARY) files
+  #
+  DATA(BINARY) test_obs.cbc
+  DATA test_obs.hds
+  DATA ibound.out
+  #
+  # Output: single observations
+  DATA test_obs.head.csv
+  DATA test_obs.riv.csv
+  DATA test_obs.ghb.csv
+  DATA test_obs.chd_obs.csv
+  #
+  # Output: continuous observations
+  DATA test_obs.ghb_flows.csv
+  DATA test_obs.head_hydrographs.csv
+  DATA test_obs.riv_flows.csv
+  DATA test_obs.intercell_flow_1.csv
+  DATA test_obs.intercell_flow_2.csv
+  DATA test_obs.intercell_flows.csv
+  DATA test_obs.chd_flows.csv
+END OUTPUT_FILES
+
