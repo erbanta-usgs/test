@@ -1,6 +1,6 @@
 begin options
-  HEAD SAVE file bcf2ss.hds
-  BUDGET SAVE FILE bcf2ss.cbc
+  HEAD SAVE file test_obs.hds
+  BUDGET SAVE FILE test_obs.cbc
   head print format 4
   head save format (15f7.2) label
   ibound save format (15i2) label

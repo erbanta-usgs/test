@@ -1,10 +1,10 @@
 #option block.  Note -- no comments allowed on aux line
 begin options
   AUX var1 var2 var3
-  PACKAGENAME 'wells near river' (16 character limit)
-  PRINT_INPUT (echo input to listing file)
-  PRINT_FLOWS  (print the flows to the listing file)
-  SAVE_FLOWS  bcf2ss.cbc (file for binary flow information; must be opened using DATA(BINARY))
+  PACKAGENAME  'wells near river' (16 character limit)
+  PRINT_INPUT    (echo input to listing file)
+  PRINT_FLOWS    (print the flows to the listing file)
+  SAVE_FLOWS   test_obs.cbc (file for binary flow information; must be opened using DATA(BINARY))
 end options
 
 begin dimensions

@@ -1,4 +1,4 @@
-begin single ghb_obs.csv
+begin single test_obs.ghb.csv
   gh1_7_1_1.0   ghb   1.0  1  7  1
   gh2upper1.0   ghb   1.0  ghb2_upper
   gh2upper1.0   ghb   1.0  ghb2_lower
