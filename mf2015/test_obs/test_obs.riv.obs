@@ -1,0 +1,8 @@
+begin options
+  precision single
+  digits 10
+  structured
+  print_input
+  external test_obs.single_riv.obs
+  external test_obs.continuous_riv.obs
+end options

@@ -1,15 +1,15 @@
 # Options block
 begin options
-  packagename 'GHB Lakes' (16 character limit)
+  packagename  'GHB Lakes' (16 character limit)
   PRINT_INPUT
   PRINT_FLOWS
   BOUNDNAMES
+  OBS          test_obs.ghb.obs
 end options
 
 # Dimensions block
 begin dimensions
   maxbound 3
-  
 end dimensions
 
 # Stress-period block(s)

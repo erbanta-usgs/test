@@ -1,17 +1,18 @@
-#option block.  Note -- no comments allowed on aux line
-begin options
-  PACKAGENAME 'River' (16 character limit)
-  PRINT_INPUT (echo input to listing file)
-  PRINT_FLOWS  (print the flows to the listing file)
-  SAVE_FLOWS  bcf2ss.cbc (file for binary flow information; must be opened using DATA(BINARY))
-  BOUNDNAMES  (specify name for any boundary specified as an observation boundary, if cell node or i,j,k is not used)
-end options
+# options block.  Note -- no comments allowed on aux line
+BEGIN OPTIONS
+  PACKAGENAME  'River' (16 character limit)
+  PRINT_INPUT    (echo input to listing file)
+  PRINT_FLOWS    (print the flows to the listing file)
+  SAVE_FLOWS   test_obs.cbc (file for binary flow information; must be opened using DATA(BINARY))
+  BOUNDNAMES     (specify name for any boundary specified as an observation boundary, if cell node or i,j,k is not used)
+  OBS          test_obs.riv.obs
+END OPTIONS
 
-begin dimensions
+BEGIN DIMENSIONS
 #  MAXBOUND 10
-end dimensions
+END DIMENSIONS
 
-begin period 1
+BEGIN PERIOD 1
 #    layer       row       col    stage      cond       rbot  BoundName
          2         1        15        0.    10000.       -5.  
          2         2        15        0.    10000.       -5.  riv2
@@ -23,10 +24,9 @@ begin period 1
          2         8        15        0.    10000.       -5.  rivX
          2         9        15        0.    10000.       -5.  rivX
          2        10        15        0.    10000.       -5.
-end period
+END PERIOD
 
-
-begin period 2
+BEGIN PERIOD 2
 #    layer       row       col    stage      cond       rbot  BoundName
          2         1        14        0.       10.       -5.  
          2         1        15        0.    10000.       -5.  
@@ -39,5 +39,4 @@ begin period 2
          2         8        15        0.    10000.       -5.  rivX
          2         9        15        0.    10000.       -5.  rivX
          2        10        15        0.    10000.       -5.
-end period
-
+END PERIOD

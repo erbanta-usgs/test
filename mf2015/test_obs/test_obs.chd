@@ -1,9 +1,10 @@
 begin options
-  PACKAGENAME 'Constant Heads'
+  PACKAGENAME  'Constant Heads'
   boundnames
   PRINT_INPUT
   PRINT_FLOWS
   SAVE_FLOWS
+  OBS          test_obs.chd.obs
 end options
 
 begin dimensions

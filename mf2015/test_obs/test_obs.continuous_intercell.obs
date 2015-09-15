@@ -1,4 +1,4 @@
-begin continuous intercell_flows.csv
+begin continuous test_obs.intercell_flows.csv
   icf1      intercell-flow    2 4 7  2 4 8  # intercell flow between (2,4,7) and (2,4,8)
   icf2      intercell-flow    2 4 7  2 5 7  # intercell flow between (2,4,7) and (2,5,7)
 end continuous

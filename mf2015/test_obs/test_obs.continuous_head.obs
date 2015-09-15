@@ -1,4 +1,4 @@
-begin continuous head_hydrographs.csv
+begin continuous test_obs.head_hydrographs.csv
   h1-3-4        head  1  3  4      # heads at lay 1 row 3 col 4
   h2-6-4        head  2  6  4      # heads at lay 2 row 6 col 4
 end continuous

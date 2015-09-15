@@ -1,4 +1,4 @@
-begin single intercell_flow_obs1.csv
+begin single test_obs.intercell_flow_1.csv
   icf1_1.0  intercell-flow  1.0  1 4 7  1 4 8  # intercell flow between (1,4,7) and (1,4,8)
   icf1_2.0  intercell-flow  2.0  1 4 7  1 4 8  # intercell flow between (1,4,7) and (1,4,8)
   icf1_3.0  intercell-flow  3.0  1 4 7  1 4 8  # intercell flow between (1,4,7) and (1,4,8)
@@ -7,7 +7,7 @@ begin single intercell_flow_obs1.csv
   icf1_10.8 intercell-flow 10.8  1 4 7  1 4 8  # intercell flow between (1,4,7) and (1,4,8)
 end single
 
-begin single intercell_flow_obs2.csv
+begin single test_obs.intercell_flow_2.csv
   icf2_1.0  intercell-flow  1.0  1 4 7  1 5 7  # intercell flow between (1,4,7) and (1,5,7)
   icf2_2.0  intercell-flow  2.0  1 4 7  1 5 7  # intercell flow between (1,4,7) and (1,5,7)
   icf2_3.0  intercell-flow  3.0  1 4 7  1 5 7  # intercell flow between (1,4,7) and (1,5,7)
