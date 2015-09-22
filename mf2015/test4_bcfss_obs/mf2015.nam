@@ -6,8 +6,8 @@ BEGIN TIMING
 END TIMING
 
 BEGIN MODELS
-  #modeltype      namefile         modelname
-         GWF    bcf2ss_struct.nam  GWF_1
+  #modeltype  namefile    modelname
+  GWF         bcf2ss.nam  GWF_1
 END MODELS
 
 BEGIN EXCHANGES

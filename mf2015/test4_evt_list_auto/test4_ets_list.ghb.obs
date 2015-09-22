@@ -1,0 +1,32 @@
+begin options
+  precision single
+  digits 10
+  structured
+end options
+
+begin single ghb_obs.csv
+  gh1_7_1_1.0   ghb   1.0  1  7  1
+  gh2upper1.0   ghb   1.0  ghb2_upper
+  gh2upper1.0   ghb   1.0  ghb2_lower
+  gh1_7_1_2.0   ghb   2.0  1  7  1
+  gh2upper2.0   ghb   2.0  ghb2_upper
+  gh2upper2.0   ghb   2.0  ghb2_lower
+  gh1_7_1_3.0   ghb   3.0  1  7  1
+  gh2upper3.0   ghb   3.0  ghb2_upper
+  gh2upper3.0   ghb   3.0  ghb2_lower
+  gh1_7_1_4.1   ghb   4.1  1  7  1
+  gh2upper4.1   ghb   4.1  ghb2_upper
+  gh2upper4.1   ghb   4.1  ghb2_lower
+  gh1_7_1_5.6   ghb   5.6  1  7  1
+  gh2upper5.6   ghb   5.6  ghb2_upper
+  gh2upper5.6   ghb   5.6  ghb2_lower
+  gh1_7_1_10.8  ghb  10.8  1  7  1
+  gh2upper10.8  ghb  10.8  ghb2_upper
+  gh2upper10.8  ghb  10.8  ghb2_lower
+end single
+
+begin continuous ghb_flows.csv
+  ghb1-3-1       ghb 1 3 1
+  ghb1-7-1       ghb 1 7 1      
+end continuous
+

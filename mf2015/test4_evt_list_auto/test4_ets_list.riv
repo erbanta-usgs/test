@@ -5,6 +5,7 @@ begin options
   SAVE_FLOWS  test4ts.cbc
   BOUNDNAMES
   TIMESERIESFILE  riv_stage.ts
+  OBS             test4_ets_list.riv.obs
 end options
 
 begin dimensions

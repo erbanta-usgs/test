@@ -1,32 +1,35 @@
-LIST  bcf2ss.lst           REPLACE
-IC8  bcf2ss.ic             OLD
-NPF8  bcf2ss.npf            OLD
-WEL8  bcf2ss.wel            OLD
-RIV8  bcf2ss.riv            OLD
-RCH8  bcf2ss.rch            OLD
-OC8   bcf2ss.oc             OLD
-DIS8  bcf2ss.dis            OLD
-GHB8  bcf2ss.ghb            OLD
-OBS8  bcf2ss.obs            OLD
-#OBS  bcf2ss_unstruct.obs   OLD
-DATA(BINARY) bcf2ss.cbc    REPLACE
-#DATA(BINARY) bcf2ss.hds    REPLACE
-DATA bcf2ss.hds            REPLACE
-DATA ibound.out            REPLACE
-#
-# Output: single observations
-DATA head_obs.csv          REPLACE
-DATA riv_obs.csv           REPLACE
-#DATA(BINARY) head_obs.bsv  REPLACE
-DATA(BINARY) riv_obs.bsv   REPLACE
-#
-# Output: continuous observations
-DATA ghb_flows.csv         REPLACE
-DATA head_hydrographs.csv  REPLACE
-DATA riv_flows.csv         REPLACE
-DATA intercell_flow_obs1.csv       REPLACE
-DATA intercell_flow_obs2.csv       REPLACE
-DATA intercell_flows.csv           REPLACE
-#DATA(BINARY) ghb_flows.bsv         REPLACE
-#DATA(BINARY) head_hydrographs.bsv  REPLACE
-#DATA(BINARY) riv_flows.bsv         REPLACE
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN INPUT_FILES
+  IC8  bcf2ss.ic             
+  NPF8  bcf2ss.npf            
+  WEL8  bcf2ss.wel            
+  RIV8  bcf2ss.riv            
+  RCH8  bcf2ss.rch            
+  OC8   bcf2ss.oc             
+  DIS8  bcf2ss.dis            
+  GHB8  bcf2ss.ghb            
+  OBS8  bcf2ss.obs     
+END INPUT_FILES
+
+BEGIN OUTPUT_FILES
+  LIST  bcf2ss.lst           
+  DATA(BINARY) bcf2ss.cbc    
+  DATA bcf2ss.hds            
+  DATA ibound.out            
+  #
+  # Output: single observations
+  DATA head_obs.csv          
+  DATA riv_obs.csv           
+  DATA ghb_obs.csv            
+  #
+  # Output: continuous observations
+  DATA ghb_flows.csv         
+  DATA head_hydrographs.csv  
+  DATA riv_flows.csv         
+  DATA intercell_flow_obs1.csv       
+  DATA intercell_flow_obs2.csv       
+  DATA intercell_flows.csv           
+END OUTPUT_FILES
+

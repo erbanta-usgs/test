@@ -2,45 +2,34 @@ BEGIN OPTIONS
 END OPTIONS
 
 BEGIN INPUT_FILES
-IC8  bcf2ss.ic             
-NPF8  bcf2ss.npf            
-WEL8  bcf2ss.wel            
-RIV8  bcf2ss.riv            
-RCH8  bcf2ss.rch            
-OC8   bcf2ss.oc             
-DIS8  bcf2ss.dis            
-GHB8  bcf2ss.ghb            
-OBS8  bcf2ss_struct.obs     
-#OBS8  bcf2ss_unstruct.obs   
+  IC8  bcf2ss.ic             
+  NPF8  bcf2ss.npf            
+  WEL8  bcf2ss.wel            
+  RIV8  bcf2ss.riv            
+  RCH8  bcf2ss.rch            
+  OC8   bcf2ss.oc             
+  DIS8  bcf2ss.dis            
+  GHB8  bcf2ss.ghb            
+  OBS8  bcf2ss.obs     
 END INPUT_FILES
 
 BEGIN OUTPUT_FILES
-LIST  bcf2ss.lst           
-DATA(BINARY) bcf2ss.cbc    
-#DATA(BINARY) bcf2ss.hds    
-DATA bcf2ss.hds            
-DATA ibound.out            
-#
-# Output: single observations
-DATA head_obs.csv          
-DATA riv_obs.csv           
-DATA ghb_obs.csv            
-#DATA(BINARY) head_obs.bsv  
-#DATA(BINARY) riv_obs.bsv   
-#DATA(BINARY) ghb_obs.csv   
-#
-# Output: continuous observations
-DATA ghb_flows.csv         
-DATA head_hydrographs.csv  
-DATA riv_flows.csv         
-DATA intercell_flow_obs1.csv       
-DATA intercell_flow_obs2.csv       
-DATA intercell_flows.csv           
-#DATA(BINARY) ghb_flows.bsv            
-#DATA(BINARY) head_hydrographs.bsv     
-#DATA(BINARY) riv_flows.bsv            
-#DATA(BINARY) intercell_flow_obs1.bsv  
-#DATA(BINARY) intercell_flow_obs2.bsv  
-#DATA(BINARY) intercell_flows.bsv      
+  LIST  bcf2ss.lst           
+  DATA(BINARY) bcf2ss.cbc    
+  DATA bcf2ss.hds            
+  DATA ibound.out            
+  #
+  # Output: single observations
+  DATA head_obs.csv          
+  DATA riv_obs.csv           
+  DATA ghb_obs.csv            
+  #
+  # Output: continuous observations
+  DATA ghb_flows.csv         
+  DATA head_hydrographs.csv  
+  DATA riv_flows.csv         
+  DATA intercell_flow_obs1.csv       
+  DATA intercell_flow_obs2.csv       
+  DATA intercell_flows.csv           
 END OUTPUT_FILES
 

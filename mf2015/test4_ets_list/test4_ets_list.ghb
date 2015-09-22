@@ -2,8 +2,9 @@
 begin options
   packagename 'GHB Lakes' (16 character limit)
   PRINT_INPUT (echo input to listing file)
-  PRINT_FLOWS  (print the flows to the listing file)
+  PRINT_FLOWS (print the flows to the listing file)
   BOUNDNAMES
+  OBS         test4_ets_list.ghb.obs
 end options
 
 # Dimensions block
