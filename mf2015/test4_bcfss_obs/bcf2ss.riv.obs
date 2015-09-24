@@ -2,9 +2,6 @@ begin options
   precision single
   digits 10
   structured
-end options
-
-begin options
   external obs_file_2
 end options
 
