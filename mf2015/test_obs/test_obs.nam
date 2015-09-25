@@ -4,7 +4,8 @@ END OPTIONS
 BEGIN INPUT_FILES
   CHD8  test_obs.chd   # includes CHD observations
   DIS8  test_obs.dis
-  GHB8  test_obs.ghb   # includes GHB observations
+  GHB8  test_obs.lakes.ghb   # includes GHB observations
+  GHB8  test_obs.ponds.ghb   # includes GHB observations
   IC8   test_obs.ic
   NPF8  test_obs.npf
   OBS8  test_obs.obs   # head and intercell flow observations
@@ -26,7 +27,8 @@ BEGIN OUTPUT_FILES
   #
   # Output: CSV files for single observations
   DATA test_obs.chd.csv
-  DATA test_obs.ghb.csv
+  DATA test_obs.ghb.lakes.csv
+  DATA test_obs.ghb.ponds.csv
   DATA test_obs.head.csv
   DATA test_obs.intercell_flow_1.csv
   DATA test_obs.intercell_flow_2.csv
@@ -34,7 +36,8 @@ BEGIN OUTPUT_FILES
   #
   # Output: CSV files for continuous observations
   DATA test_obs.chd_flows.csv
-  DATA test_obs.ghb_flows.csv
+  DATA test_obs.ghb_flows.lakes.csv
+  DATA test_obs.ghb_flows.ponds.csv
   DATA test_obs.head_hydrographs.csv
   DATA test_obs.intercell_flows.csv
   DATA test_obs.riv_flows.csv
