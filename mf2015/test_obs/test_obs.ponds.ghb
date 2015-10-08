@@ -1,6 +1,6 @@
 # Options block
 begin options
-  packagename  'GHB ponds' (16 character limit)
+  packagename  'GHB Ponds' (16 character limit)
   PRINT_INPUT
   PRINT_FLOWS
   BOUNDNAMES

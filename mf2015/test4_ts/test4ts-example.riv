@@ -7,6 +7,7 @@ begin options
   BOUNDNAMES  (specify name for any boundary specified as an observation boundary, if cell node or i,j,k is not used)
   TIMESERIESFILE  time_series_file_1.ts
   TIMESERIESFILE  time_series_file_2.ts
+  OBS         test4_ts.riv.obs
 #Other packages may specify the same TIMESERIESFILE and reuse the same time series.
 #To specify multiple time-series files, enter a TIMESERIESFILE line for each file.
 end options
