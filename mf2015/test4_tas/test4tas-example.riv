@@ -9,7 +9,7 @@ begin options
   TIMESERIESFILE  time_series_file_2.ts
 #Other packages may specify the same TIMESERIESFILE and reuse the same time series.
 #To specify multiple time-series files, enter a TIMESERIESFILE line for each file.
-  OBS             test4tas.riv.obs
+  OBS8            test4tas.riv.obs
 end options
 
 begin dimensions

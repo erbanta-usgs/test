@@ -4,7 +4,7 @@ begin options
   PRINT_INPUT
   PRINT_FLOWS
   BOUNDNAMES
-  OBS         test4_ts.ghb.obs
+  OBS8        test4_ts.ghb.obs
 end options
 
 # Dimensions block

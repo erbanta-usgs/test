@@ -5,7 +5,7 @@ BEGIN OPTIONS
   PRINT_FLOWS    (print the flows to the listing file)
   SAVE_FLOWS   test_obs.cbc (file for binary flow information; must be opened using DATA(BINARY))
   BOUNDNAMES     (specify name for any boundary specified as an observation boundary, if cell node or i,j,k is not used)
-  OBS          test_obs.riv.obs
+  OBS8         test_obs.riv.obs
 END OPTIONS
 
 BEGIN DIMENSIONS

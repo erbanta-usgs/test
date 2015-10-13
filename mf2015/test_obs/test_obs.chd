@@ -4,7 +4,7 @@ begin options
   PRINT_INPUT
   PRINT_FLOWS
   SAVE_FLOWS
-  OBS          test_obs.chd.obs
+  OBS8         test_obs.chd.obs
 end options
 
 begin dimensions
