@@ -4,6 +4,7 @@ begin options
   PRINT_INPUT
   PRINT_FLOWS
   BOUNDNAMES
+  OBS         test4tas.ghb.obs
 end options
 
 # Dimensions block

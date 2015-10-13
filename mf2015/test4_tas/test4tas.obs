@@ -15,42 +15,6 @@ begin single head_obs.csv
   h1_day10.8  head  10.8  2  3  6    # head obs at layer 2 row 3 col 6
 end single
 
-begin single riv_obs.csv
-  rv1-4-15d1    riv   1.0  1  4 15  # river flow at layer 1 row 4 col 15
-  rv1-4-15d2.0  riv   2.0  1  4 15  # river flow at layer 1 row 4 col 15
-  rv1-4-15d3.0  riv   3.0  1  4 15  # river flow at layer 1 row 4 col 15
-  rv1-4-15d4.1  riv   4.1  1  4 15  # river flow at layer 1 row 4 col 15
-  rv1-4-15d5.6  riv   5.6  1  4 15  # river flow at layer 1 row 4 col 15
-  rv1-4-15d10.8 riv  10.8  1  4 15  # river flow at layer 1 row 4 col 15
-  riv2-10.8     riv  10.8  riv2     # river flow at river boundary "riv2"
-  riv3-10.8     riv  10.8  riv3     # river flow at river boundary "riv3"
-  rivX-10.8     riv  10.8  rivX     # sum of river flows at boundaries named "rivX"
-  rv1-7-15d1    riv  10.8  1  7 15  # rivX, row 7
-  rv1-8-15d1    riv  10.8  1  8 15  # rivX, row 8
-  rv1-9-15d1    riv  10.8  1  9 15  # rivX, row 8
-end single
-
-begin single ghb_obs.csv
-  gh1_7_1_1.0   ghb   1.0  1  7  1
-  gh2upper1.0   ghb   1.0  ghb2_upper
-  gh2upper1.0   ghb   1.0  ghb2_lower
-  gh1_7_1_2.0   ghb   2.0  1  7  1
-  gh2upper2.0   ghb   2.0  ghb2_upper
-  gh2upper2.0   ghb   2.0  ghb2_lower
-  gh1_7_1_3.0   ghb   3.0  1  7  1
-  gh2upper3.0   ghb   3.0  ghb2_upper
-  gh2upper3.0   ghb   3.0  ghb2_lower
-  gh1_7_1_4.1   ghb   4.1  1  7  1
-  gh2upper4.1   ghb   4.1  ghb2_upper
-  gh2upper4.1   ghb   4.1  ghb2_lower
-  gh1_7_1_5.6   ghb   5.6  1  7  1
-  gh2upper5.6   ghb   5.6  ghb2_upper
-  gh2upper5.6   ghb   5.6  ghb2_lower
-  gh1_7_1_10.8  ghb  10.8  1  7  1
-  gh2upper10.8  ghb  10.8  ghb2_upper
-  gh2upper10.8  ghb  10.8  ghb2_lower
-end single
-
 begin single intercell_flow_obs1.csv
   icf1_1.0  intercell-flow  1.0  1 4 7  1 4 8  # intercell flow between node 67 (1,4,7) and node 68 (1,4,8)
   icf1_2.0  intercell-flow  2.0  1 4 7  1 4 8  # intercell flow between node 67 (1,4,7) and node 68 (1,4,8)
@@ -69,28 +33,7 @@ begin single intercell_flow_obs2.csv
   icf2_10.8 intercell-flow 10.8  1 4 7  1 5 7  # intercell flow between node 67 (1,4,7) and node 82 (1,5,7)
 end single
 
-#begin single chd_obs.csv
-#  chd141-1.0      chd-flow   1.0   1  4  1  # constant-head flow at cell (1,4,1)
-#  chd-1-2.0       chd-flow   2.0   chd-1    # constant-head flow at cell "chd-1" (1,1,1)
-#  chd_gp-2.5      chd-flow   2.5   chd_gp   # constant-head flow at cells "chd_gp"
-#  chd_gp-3.0      chd-flow   3.0   chd_gp   # constant-head flow at cells "chd_gp"
-#  chd_gp-8.0      chd-flow   8.0   chd_gp   # constant-head flow at cells "chd_gp"
-#  chd-10r10.0     chd-flow  10.0   chd-10   # constant-head flow at cell "chd-10" (1,10,1)
-#  chd-10r11.0     chd-flow  11.0   chd-10   # constant-head flow at cell "chd-10" (1,10,1)
-#end single
-
 # Blocks defining continuous observations
-
-begin continuous riv_flows.csv
-  riv1-3-15      riv 1 3 15      # sum of flows for all riv cells at lay 2 row 3 col 15
-  riv1-4-15      riv 1 4 15      # sum of flows for all riv cells at lay 2 row 4 col 15
-  riv1-5-15      riv 1 5 15      # sum of flows for all riv cells at lay 2 row 5 col 15
-end continuous
-
-begin continuous ghb_flows.csv
-  ghb1-3-1       ghb 1 3 1
-  ghb1-7-1       ghb 1 7 1      
-end continuous
 
 begin continuous head_hydrographs.csv
   h1-3-4        head  1  3  4      # heads at lay 1 row 3 col 4
@@ -101,12 +44,3 @@ begin continuous intercell_flows.csv
   icf1      intercell-flow    2 4 7  2 4 8  # intercell flow between node 67 (2,4,7) and node 68 (2,4,8)
   icf2      intercell-flow    2 4 7  2 5 7  # intercell flow between node 67 (2,4,7) and node 82 (2,5,7)
 end continuous
-
-#begin continuous chd_flows.csv
-#  chd_1-1-1      chd-flow    1  1 1  # constant-head flow at cell (1,1,1)
-#  chd_1-4-1      chd-flow    1  4 1  # constant-head flow at cell (1,4,1)
-#  chd_1-5-1      chd-flow    1  5 1  # constant-head flow at cell (1,5,1)
-#  chd_1-6-1      chd-flow    1  6 1  # constant-head flow at cell (1,6,1)
-#  chd_1-10-1     chd-flow    1 10 1  # constant-head flow at cell (1,10,1)
-#end continuous
-

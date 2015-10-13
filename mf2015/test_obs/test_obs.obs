@@ -3,7 +3,7 @@ begin options
   digits 10
   structured
   print_input
-  external test_obs.single_head.obs
+  external 'test_obs.single head.obs'
   external test_obs.single_intercell.obs
   external test_obs.continuous_head.obs
   external test_obs.continuous_intercell.obs

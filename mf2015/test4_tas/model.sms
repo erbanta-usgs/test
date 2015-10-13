@@ -1,5 +1,5 @@
 begin options
-	PRINT_OPTION 1
+	PRINT_OPTION summary
 end options
 
 begin nonlinear

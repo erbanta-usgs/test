@@ -9,7 +9,6 @@ BEGIN INPUT_FILES
   RIV8  test4tas-example.riv     
   RCH8  test4tas.rch     
   OC8   test4tas.oc      
-  #OC8   test4tas-brief.oc      
   DIS8  test4tas.dis     
   GHB8  test4tas.ghb     
   STO8  test4tas.sto     
