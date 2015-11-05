@@ -1,13 +1,10 @@
 begin options
-  HEAD SAVE file test_ts_many.hds
-  BUDGET SAVE FILE test_ts_many.cbc
-  head print format 4
-  head save format (15f7.2) label
-  ibound save format (15i2) label
-  ibound save file ibound.out
 end options
 
 begin PERIOD 1
-  BUDGET print all
-  BUDGET save last
+  BUDGET print last
+end period
+
+begin period 2
+  budget print frequency 200
 end period
