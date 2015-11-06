@@ -5,10 +5,11 @@ BEGIN INPUT_FILES
   IC8   test_ts_many.ic    
   NPF8  test_ts_many.npf     
   CHD8  test_ts_many.chd     
-#  RCH8  test_ts_many.rch     
   OC8   test_ts_many.oc      
   DIS8  test_ts_many.dis     
-  STO8  test_ts_many.sto     
+  STO8  test_ts_many.sto
+  WEL8  test_ts_many_pump.wel
+  WEL8  test_ts_many_inject.wel
 END INPUT_FILES
 
 BEGIN OUTPUT_FILES

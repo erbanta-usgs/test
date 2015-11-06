@@ -6,5 +6,5 @@ begin PERIOD 1
 end period
 
 begin period 2
-  budget print frequency 200
+  budget print frequency 20
 end period
