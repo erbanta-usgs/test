@@ -36,7 +36,8 @@ numcols = endcol - startcol + 1
 maxbound = numrows * numcols
 
 # make a time series list of pairs of time and rate.
-ts = [(0.0, 0.0), (1.0, 0.0), (1001.0, Q)]
+Qd3 = Q / 3.0
+ts = [(0.0, 0.0), (1.0, 0.0), (500.0, Qd3), (1001.0, Q)]
 
 # write initial lines of well file
 
